@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="XF13TPSample.StylesPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<Style x:Key="LabelStyle" TargetType="Label">
+				<Setter Property="Label.TextColor" Value="White" />
+				<Setter Property="Label.BackgroundColor" Value="Gray" />
+				<Setter Property="HorizontalOptions" Value="Center" />
+				<Setter Property="VerticalOptions" Value="Center" />
+			</Style>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	
+	<ContentPage.Content>
+		<Label
+			Text="Hello Styles!"
+			Style="{StaticResource LabelStyle}" 
+			/>
+	</ContentPage.Content>
+</ContentPage>
