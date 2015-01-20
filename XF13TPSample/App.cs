@@ -7,9 +7,10 @@ namespace XF13TPSample
 	{
 		public App()
 		{
-			var page = new CarouselPage ();
-			page.Children.Add (new StylesPage ());
-			page.Children.Add (new TriggersPage ());
+			var page = new NavigationPage (new StylesPage());
+//			var page = new CarouselPage ();
+			//page.Children.Add (new StylesPage ());
+			//page.Children.Add (new TriggersPage ());
 			MainPage = page;
 		}
 

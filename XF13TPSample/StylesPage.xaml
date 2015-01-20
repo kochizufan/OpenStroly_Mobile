@@ -15,6 +15,7 @@
 		<Label
 			Text="Hello Styles!"
 			Style="{StaticResource LabelStyle}" 
-			/>
+			>
+		</Label>
 	</ContentPage.Content>
 </ContentPage>
