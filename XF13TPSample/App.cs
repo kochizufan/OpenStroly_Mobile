@@ -8,6 +8,7 @@ namespace XF13TPSample
 		public App()
 		{
 			var page = new NavigationPage (App.GetMainPage());
+			NavigationPage.SetHasNavigationBar(page,false);
 			//var page = new CarouselPage ();
 			//page.Children.Add (new StylesPage ());
 			//page.Children.Add (new TriggersPage ());
@@ -37,8 +38,14 @@ namespace XF13TPSample
 					HorizontalOptions = LayoutOptions.Center
 				}
 			};
+					
+			page.Appearing += (object sender, EventArgs e) => {
+				NavigationPage.SetHasNavigationBar(page,false);
+			};
 
-
+			page.Disappearing += (object sender, EventArgs e) => {
+				NavigationPage.SetHasNavigationBar(page,true);
+			};
 
 			button1.Clicked += (sender, e) =>
 			{
@@ -53,7 +60,7 @@ namespace XF13TPSample
 			};
 			button2.Clicked += async (sender, e) => 
 			{
-				await page.Navigation.PushAsync (new StylesPage ());
+				await page.Navigation.PushModalAsync(new StylesPage ());
 			};
 
 			return page;
