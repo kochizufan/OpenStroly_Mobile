@@ -10,6 +10,10 @@ namespace XF13TPSample
 		{
 			InitializeComponent ();
 		}
+
+		async void OnTapGestureRecognizerTapped(object sender, EventArgs args) {
+			await this.Navigation.PushAsync (new TriggersPage ());
+		}
 	}
 }
 

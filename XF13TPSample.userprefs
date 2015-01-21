@@ -1,10 +1,15 @@
 ﻿<Properties StartupItem="Android/XF13TPSample.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XF13TPSample/obj/Debug/StylesPage.xaml.g.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.1ab27261" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XF13TPSample/App.cs">
     <Files>
-      <File FileName="XF13TPSample/TriggersPage.xaml" Line="5" Column="5" />
-      <File FileName="XF13TPSample/StylesPage.xaml" Line="5" Column="5" />
+      <File FileName="XF13TPSample/App.cs" Line="57" Column="57" />
+      <File FileName="XF13TPSample/StylesPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XF13TPSample/TriggersPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="XF13TPSample/StylesPage.xaml" Line="1" Column="1" />
       <File FileName="XF13TPSample/obj/Debug/StylesPage.xaml.g.cs" Line="1" Column="1" />
+      <File FileName="Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="XF13TPSample/TriggersPage.xaml" Line="1" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

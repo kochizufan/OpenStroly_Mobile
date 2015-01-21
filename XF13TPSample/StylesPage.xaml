@@ -10,12 +10,15 @@
 			</Style>
 		</ResourceDictionary>
 	</ContentPage.Resources>
-	
+
 	<ContentPage.Content>
 		<Label
 			Text="Hello Styles!"
-			Style="{StaticResource LabelStyle}" 
-			>
+			Style="{StaticResource LabelStyle}">
+			<Label.GestureRecognizers>
+        		<TapGestureRecognizer
+                	Tapped="OnTapGestureRecognizerTapped" />
+  			</Label.GestureRecognizers>
 		</Label>
 	</ContentPage.Content>
 </ContentPage>
