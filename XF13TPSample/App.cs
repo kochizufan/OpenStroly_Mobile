@@ -60,7 +60,7 @@ namespace XF13TPSample
 			};
 			button2.Clicked += async (sender, e) => 
 			{
-				await page.Navigation.PushModalAsync(new StylesPage ());
+				await page.Navigation.PushAsync(new StylesPage ());
 			};
 
 			return page;
