@@ -1,12 +1,16 @@
 ﻿<Properties StartupItem="Android/XF13TPSample.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XF13TPSample/App.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Nexus 4 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XF13TPSample/obj/Debug/StylesPage.xaml.g.cs">
     <Files>
-      <File FileName="XF13TPSample/App.cs" Line="1" Column="1" />
+      <File FileName="XF13TPSample/TriggersPage.xaml" Line="5" Column="5" />
+      <File FileName="XF13TPSample/StylesPage.xaml" Line="5" Column="5" />
+      <File FileName="XF13TPSample/obj/Debug/StylesPage.xaml.g.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/kotsuka/Projects/XamarinForms_1_3_0_TP_Sample/XF13TPSample/StylesPage.cs" line="11" column="48" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
