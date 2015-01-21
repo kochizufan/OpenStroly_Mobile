@@ -4,6 +4,8 @@
 		<Switch
 			HorizontalOptions="Center"
 			VerticalOptions="Center"
+			HeightRequest="20"
+			WidthRequest="20"
 			>
 			<Switch.Triggers>
 				<Trigger TargetType="Switch" Property="Switch.IsToggled" Value="true">

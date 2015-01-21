@@ -68,7 +68,4 @@ Global
 		{E05F9117-01E4-411E-8B65-2DC0F5009300}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{E05F9117-01E4-411E-8B65-2DC0F5009300}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = iOS\XF13TPSample.iOS.csproj
-	EndGlobalSection
 EndGlobal
