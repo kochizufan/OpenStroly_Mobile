@@ -114,9 +114,6 @@ namespace XF13TPSample.Android
 			// aapt resource value: 0x7f050000
 			public const int NoActionBarTheme = 2131034112;
 			
-			// aapt resource value: 0x7f050001
-			public const int invisible_action_bar_style = 2131034113;
-			
 			static Style()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();

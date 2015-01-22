@@ -13,20 +13,21 @@ using Xamarin.Forms.Platform.Android;
 
 namespace XF13TPSample.Android
 {
-	[Activity (Label = "", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity (Label = "", Theme = "@style/NoActionBarTheme",
+		MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Xamarin.Forms.Platform.Android.FormsApplicationActivity
 	{
-		public MainActivity () : base()
-		{
-			RequestWindowFeature(WindowFeatures.ActionBar);
-			ActionBar.Hide ();
-		}
-
 		protected override void OnCreate(Bundle bundle)
 		{
+			base.Window.RequestFeature(WindowFeatures.ActionBar);
+			base.SetTheme(global::Android.Resource.Style.ThemeHoloLight);
 			base.OnCreate(bundle);
+			base.ActionBar.Hide();
+
 			Forms.Init(this, bundle);
-			LoadApplication(new App ());
+			var app = new App ();
+			NavigationPage.SetHasNavigationBar (app, false);
+			LoadApplication(app);
 		}
 	}
 }
