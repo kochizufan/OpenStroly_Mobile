@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="iOS/XF13TPSample.iOS.csproj">
+﻿<Properties StartupItem="Android/XF13TPSample.Android.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.tilemapper2" />
   <MonoDevelop.Ide.Workbench ActiveDocument="XF13TPSample/App.cs">
     <Files>

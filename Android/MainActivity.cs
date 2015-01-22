@@ -13,14 +13,20 @@ using Xamarin.Forms.Platform.Android;
 
 namespace XF13TPSample.Android
 {
-	[Activity (Label = "XF13TPSample.Android.Android", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity (Label = "", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Xamarin.Forms.Platform.Android.FormsApplicationActivity
 	{
+		public MainActivity () : base()
+		{
+			RequestWindowFeature(WindowFeatures.ActionBar);
+			ActionBar.Hide ();
+		}
+
 		protected override void OnCreate(Bundle bundle)
 		{
 			base.OnCreate(bundle);
 			Forms.Init(this, bundle);
-			LoadApplication(new App());
+			LoadApplication(new App ());
 		}
 	}
 }
