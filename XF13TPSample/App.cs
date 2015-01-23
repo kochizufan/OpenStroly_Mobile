@@ -17,7 +17,7 @@ namespace XF13TPSample
 
 		public static Page GetMainPage()
 		{
-			return new SplashPage();
+			return new WebViewPage ();//SplashPage();
 		}
 
 		//		protected override void OnSleep()

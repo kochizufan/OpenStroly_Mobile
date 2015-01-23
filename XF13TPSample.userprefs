@@ -1,15 +1,30 @@
 ﻿<Properties StartupItem="Android/XF13TPSample.Android.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.tilemapper2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="XF13TPSample/App.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
     <Files>
-      <File FileName="XF13TPSample/App.cs" Line="31" Column="31" />
+      <File FileName="Android/Resources/values/Styles.xml" Line="1" Column="1" />
+      <File FileName="Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
+      <File FileName="Android/packages.config" Line="1" Column="1" />
+      <File FileName="XF13TPSample/CanbasWebHybrid.xaml" Line="45" Column="45" />
+      <File FileName="XF13TPSample/CanbasWebHybrid.xaml.cs" Line="1" Column="1" />
+      <File FileName="XF13TPSample/StylesPage.xaml.cs" Line="11" Column="11" />
+      <File FileName="XF13TPSample/WebHybridViewModel.cs" Line="16" Column="16" />
+      <File FileName="XF13TPSample/App.cs" Line="1" Column="1" />
       <File FileName="iOS/Main.cs" Line="1" Column="1" />
+      <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/kotsuka/Projects/XamarinForms_1_3_0_TP_Sample/XF13TPSample/StylesPage.cs" line="11" column="48" />
+      <Breakpoint file="/Users/kokogiko/Projects/MapApp/AtCreationApp/TileMapJP/TileMapJP.Droid/src/Core/Manager/Conductor_And.cs" line="15" column="1" />
+      <Breakpoint file="/Users/kokogiko/Projects/XamarinForms_1_3_0_TP_Sample/XF13TPSample/CanbasWebHybrid.xaml.cs" line="70" column="1" />
+      <Breakpoint file="/Users/kokogiko/Projects/XamarinForms_1_3_0_TP_Sample/XF13TPSample/App.cs" line="15" column="1" />
+      <Breakpoint file="/Users/kokogiko/Projects/XamarinForms_1_3_0_TP_Sample/XF13TPSample/CanbasWebHybrid.xaml.cs" line="38" column="1" />
+      <Breakpoint file="/Users/kokogiko/Projects/XamarinForms_1_3_0_TP_Sample/XF13TPSample/CanbasWebHybrid.xaml.cs" line="68" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../MapApp/AtCreationApp/TileMapJP/TileMapJP.Shared/src/Core/Mvvm/ListController.cs" line="55" offsetX="452" offsetY="810" expression="ret" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>
