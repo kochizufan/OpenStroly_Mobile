@@ -15,6 +15,8 @@ namespace XF13TPSample.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
+			NSUrlCache.SharedCache = new WebViewExCache ();
+
 			Forms.Init();
 			LoadApplication(new App());
 			return base.FinishedLaunching(app, options);
