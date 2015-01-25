@@ -7,6 +7,7 @@ using UIKit;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using Tilemapjp.XF.iOS;
 
 namespace XF13TPSample.iOS
 {
@@ -16,6 +17,7 @@ namespace XF13TPSample.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			NSUrlCache.SharedCache = new WebViewExCache ();
+			//WebViewExRenderer.CacheInitialize ();
 
 			Forms.Init();
 			LoadApplication(new App());

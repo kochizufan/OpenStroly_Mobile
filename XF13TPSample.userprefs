@@ -1,18 +1,19 @@
-﻿<Properties StartupItem="Android/XF13TPSample.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.tilemapper2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+﻿<Properties StartupItem="iOS/XF13TPSample.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Android4.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/WebViewExRenderer.cs">
     <Files>
       <File FileName="Android/Resources/values/Styles.xml" Line="1" Column="1" />
       <File FileName="Android/MainActivity.cs" Line="1" Column="1" />
       <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
       <File FileName="Android/packages.config" Line="1" Column="1" />
-      <File FileName="XF13TPSample/CanbasWebHybrid.xaml" Line="45" Column="45" />
-      <File FileName="XF13TPSample/CanbasWebHybrid.xaml.cs" Line="1" Column="1" />
-      <File FileName="XF13TPSample/StylesPage.xaml.cs" Line="11" Column="11" />
-      <File FileName="XF13TPSample/WebHybridViewModel.cs" Line="16" Column="16" />
+      <File FileName="XF13TPSample/StylesPage.xaml.cs" Line="1" Column="1" />
       <File FileName="XF13TPSample/App.cs" Line="1" Column="1" />
       <File FileName="iOS/Main.cs" Line="1" Column="1" />
       <File FileName="iOS/AppDelegate.cs" Line="1" Column="1" />
+      <File FileName="Tilemapjp.XF.WebViewEx/WebViewEx.cs" Line="31" Column="31" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/WebViewExRenderer.cs" Line="21" Column="21" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/Resources/AboutResources.txt" Line="1" Column="1" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/Resources/Resource.designer.cs" Line="75" Column="75" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

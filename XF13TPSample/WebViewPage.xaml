@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="XF13TPSample.WebViewPage"
-    xmlns:local="clr-namespace:XF13TPSample;assembly=XF13TPSample">
+    xmlns:local="clr-namespace:Tilemapjp.XF;assembly=Tilemapjp.XF.WebViewEx">
     <ContentPage.Content>
     <local:WebViewEx x:Name="webView" />
     </ContentPage.Content>

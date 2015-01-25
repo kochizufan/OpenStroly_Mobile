@@ -1,6 +1,6 @@
 ﻿using System;
-using XF13TPSample;
-using XF13TPSample.Android;
+using Tilemapjp.XF;
+using Tilemapjp.XF.Android;
 using Xamarin.Forms.Platform.Android;
 using Xamarin.Forms;
 using Android.Webkit;
@@ -10,7 +10,7 @@ using System.Text;
 
 [assembly: ExportRenderer (typeof (WebViewEx), typeof (WebViewExRenderer))]
 
-namespace XF13TPSample.Android
+namespace Tilemapjp.XF.Android
 {
 	public class WebViewExRenderer : WebViewRenderer
 	{
@@ -47,22 +47,25 @@ namespace XF13TPSample.Android
 
 		public override WebResourceResponse ShouldInterceptRequest (AndWebView view, string url)
 		{
-			var webViewEx = (WebViewEx)Renderer.Element;
-			webViewEx.RaiseHandleStarted(new HandleStartedMessage(){ Uri = new Uri(url)});
+			if (WebViewEx._UseCachedContent == null)
+				return null;
 
-			var mime = "text/html";
-			var enc  = "UTF-8";
-			var bs   = @"<html><body>
-    <h1>Xamarin.Forms</h1>
-    <p>Welcome to WebView.</p>
-    </body></html>";
+			var ncached = WebViewEx._UseCachedContent (url);
+			if (!ncached.HasValue)
+				return null;
+			var cached = ncached.Value;
 
-			var webResourceResponse = new WebResourceResponse (mime, enc, new MemoryStream (Encoding.UTF8.GetBytes (bs)));
+			var mime     = cached.Mime;
+			var encoding = cached.Encoding;
+			var content  = cached.Content;
+
+			var webResourceResponse = new WebResourceResponse (mime, encoding, new MemoryStream (
+				Encoding.GetEncoding(encoding).GetBytes (content)));
 			return webResourceResponse;
 		}
 
-		/*public override bool ShouldOverrideUrlLoading(WebView View, string Url) {
-			if (Url.StartsWith ("tel:")) { 
+		public override bool ShouldOverrideUrlLoading(AndWebView View, string Url) {
+			/*if (Url.StartsWith ("tel:")) { 
 				Intent intent = new Intent (Intent.ActionDial, Android.Net.Uri.Parse (Url));
 				OwnerActivity.StartActivity (intent); 
 				return true;
@@ -71,12 +74,12 @@ namespace XF13TPSample.Android
 				Intent intent = new Intent (Intent.ActionView, Android.Net.Uri.Parse (Url));
 				OwnerActivity.StartActivity (intent);
 				return true;
-			}
-			return false;
+			}*/
+			var webViewEx = (WebViewEx)Renderer.Element;
+			webViewEx.RaiseHandleStarted(new HandleStartedMessage(){ Uri = new Uri(Url)});
+
+			return webViewEx.ShouldLoad == null ? true : webViewEx.ShouldLoad(webViewEx, Url);
 		}
-
-
-		*/
 	}
 }
 

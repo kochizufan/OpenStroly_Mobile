@@ -4,12 +4,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{E05F9117-01E4-411E-8B65-2DC0F5009300}</ProjectGuid>
+    <ProjectGuid>{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XF13TPSample</RootNamespace>
-    <AssemblyName>XF13TPSample</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Tilemapjp.XF.WebViewEx</RootNamespace>
+    <AssemblyName>Tilemapjp.XF.WebViewEx</AssemblyName>
     <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,21 +30,8 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StylesPage.xaml.cs">
-      <DependentUpon>StylesPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="TriggersPage.xaml.cs">
-      <DependentUpon>TriggersPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MyPage.xaml.cs">
-      <DependentUpon>MyPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SplashPage.cs" />
-    <Compile Include="WebViewPage.xaml.cs">
-      <DependentUpon>WebViewPage.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="WebViewEx.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -70,25 +57,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="StylesPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TriggersPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MyPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="WebViewPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
-      <Project>{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}</Project>
-      <Name>Tilemapjp.XF.WebViewEx</Name>
-    </ProjectReference>
   </ItemGroup>
 </Project>

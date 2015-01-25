@@ -122,6 +122,14 @@
       <Project>{E05F9117-01E4-411E-8B65-2DC0F5009300}</Project>
       <Name>XF13TPSample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
+      <Project>{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}</Project>
+      <Name>Tilemapjp.XF.WebViewEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.iOS.WebViewEx\Tilemapjp.XF.iOS.WebViewEx.csproj">
+      <Project>{93C0E125-E2C5-4FCF-95C9-24A7F42863D4}</Project>
+      <Name>Tilemapjp.XF.iOS.WebViewEx</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
@@ -134,7 +142,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="WebViewExRenderer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
