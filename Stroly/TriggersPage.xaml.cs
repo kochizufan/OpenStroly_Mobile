@@ -1,8 +1,8 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
-namespace XF13TPSample
+namespace Stroly
 {	
 	public partial class TriggersPage : ContentPage
 	{	

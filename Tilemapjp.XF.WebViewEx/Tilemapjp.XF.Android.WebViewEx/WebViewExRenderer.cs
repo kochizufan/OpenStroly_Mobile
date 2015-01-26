@@ -59,8 +59,8 @@ namespace Tilemapjp.XF.Android
 			var encoding = cached.Encoding;
 			var content  = cached.Content;
 
-			var webResourceResponse = new WebResourceResponse (mime, encoding, new MemoryStream (
-				Encoding.GetEncoding(encoding).GetBytes (content)));
+			var webResourceResponse = new WebResourceResponse (mime, encoding, new MemoryStream (content));
+				//new MemoryStream (Encoding.GetEncoding(encoding).GetBytes (content)));
 			return webResourceResponse;
 		}
 

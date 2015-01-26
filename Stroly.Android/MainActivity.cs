@@ -11,7 +11,7 @@ using Android.OS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
-namespace XF13TPSample.Android
+namespace Stroly.Android
 {
 	[Activity (Label = "", Theme = "@style/NoActionBarTheme",
 		MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]

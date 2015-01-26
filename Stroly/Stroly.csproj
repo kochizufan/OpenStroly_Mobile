@@ -6,8 +6,8 @@
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{E05F9117-01E4-411E-8B65-2DC0F5009300}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XF13TPSample</RootNamespace>
-    <AssemblyName>XF13TPSample</AssemblyName>
+    <RootNamespace>Stroly</RootNamespace>
+    <AssemblyName>Stroly</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Profile78</TargetFrameworkProfile>
   </PropertyGroup>
@@ -41,9 +41,9 @@
     <Compile Include="MyPage.xaml.cs">
       <DependentUpon>MyPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SplashPage.cs" />
-    <Compile Include="WebViewPage.xaml.cs">
-      <DependentUpon>WebViewPage.xaml</DependentUpon>
+    <Compile Include="ChangePage.cs" />
+    <Compile Include="SplashPage.xaml.cs">
+      <DependentUpon>SplashPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
@@ -81,7 +81,8 @@
     <EmbeddedResource Include="MyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="WebViewPage.xaml">
+    <EmbeddedResource Include="content\tilemap.jp\default.html" />
+    <EmbeddedResource Include="SplashPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
@@ -90,5 +91,8 @@
       <Project>{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}</Project>
       <Name>Tilemapjp.XF.WebViewEx</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content\" />
   </ItemGroup>
 </Project>

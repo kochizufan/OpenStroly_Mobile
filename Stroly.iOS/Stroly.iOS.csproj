@@ -6,9 +6,8 @@
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{9FB60596-F404-48F1-A143-764289B6FAD2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XF13TPSample.iOS</RootNamespace>
+    <RootNamespace>Stroly.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>XF13TPSampleiOS</AssemblyName>
     <TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
   </PropertyGroup>
@@ -25,6 +24,10 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <AssemblyName>Stroly.iOS</AssemblyName>
+    <MtouchI18n>
+    </MtouchI18n>
+    <MtouchArch>i386</MtouchArch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -36,6 +39,7 @@
     <MtouchLink>None</MtouchLink>
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
+    <AssemblyName>Stroly.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,6 +57,9 @@
     </MtouchI18n>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchSdkVersion>8.1</MtouchSdkVersion>
+    <AssemblyName>XF13TPSampleiOS</AssemblyName>
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>full</DebugType>
@@ -64,6 +71,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <AssemblyName>XF13TPSampleiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
     <DebugType>full</DebugType>
@@ -77,6 +85,7 @@
     <CodesignProvision>Automatic:AdHoc</CodesignProvision>
     <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <AssemblyName>XF13TPSampleiOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
     <DebugType>full</DebugType>
@@ -89,6 +98,7 @@
     <ConsolePause>false</ConsolePause>
     <CodesignProvision>Automatic:AppStore</CodesignProvision>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <AssemblyName>XF13TPSampleiOS</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -118,10 +128,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XF13TPSample\XF13TPSample.csproj">
-      <Project>{E05F9117-01E4-411E-8B65-2DC0F5009300}</Project>
-      <Name>XF13TPSample</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
       <Project>{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}</Project>
       <Name>Tilemapjp.XF.WebViewEx</Name>
@@ -129,6 +135,10 @@
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.iOS.WebViewEx\Tilemapjp.XF.iOS.WebViewEx.csproj">
       <Project>{93C0E125-E2C5-4FCF-95C9-24A7F42863D4}</Project>
       <Name>Tilemapjp.XF.iOS.WebViewEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stroly\Stroly.csproj">
+      <Project>{E05F9117-01E4-411E-8B65-2DC0F5009300}</Project>
+      <Name>Stroly</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

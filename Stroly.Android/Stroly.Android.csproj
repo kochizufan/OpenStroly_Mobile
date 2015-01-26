@@ -6,14 +6,14 @@
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{32C5BDFA-CC87-4798-8CAC-0D4A8F04C93C}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>XF13TPSample.Android</RootNamespace>
+    <RootNamespace>Stroly.Android</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
-    <AssemblyName>XF13TPSample.Android</AssemblyName>
+    <AssemblyName>Stroly.Android</AssemblyName>
     <TargetFrameworkVersion>v5.0</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
@@ -63,10 +63,6 @@
     <Reference Include="Mono.Android.Export" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\XF13TPSample\XF13TPSample.csproj">
-      <Project>{E05F9117-01E4-411E-8B65-2DC0F5009300}</Project>
-      <Name>XF13TPSample</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
       <Project>{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}</Project>
       <Name>Tilemapjp.XF.WebViewEx</Name>
@@ -74,6 +70,10 @@
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.Android.WebViewEx\Tilemapjp.XF.Android.WebViewEx.csproj">
       <Project>{92B99BEC-6C01-426C-B0E0-77338F55DC5E}</Project>
       <Name>Tilemapjp.XF.Android.WebViewEx</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Stroly\Stroly.csproj">
+      <Project>{E05F9117-01E4-411E-8B65-2DC0F5009300}</Project>
+      <Name>Stroly</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

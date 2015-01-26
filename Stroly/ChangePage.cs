@@ -2,11 +2,11 @@
 
 using Xamarin.Forms;
 
-namespace XF13TPSample
+namespace Stroly
 {
-	public partial class SplashPage : ContentPage
+	public partial class ChangePage : ContentPage
 	{
-		public SplashPage ()
+		public ChangePage ()
 		{
 			var datePicker = new DatePicker { };
 			var timePicker = new TimePicker { };
@@ -27,14 +27,6 @@ namespace XF13TPSample
 				HorizontalOptions = LayoutOptions.Center
 			};
 
-			this.Appearing += (object sender, EventArgs e) => {
-				NavigationPage.SetHasNavigationBar(this,false);
-			};
-
-			this.Disappearing += (object sender, EventArgs e) => {
-				NavigationPage.SetHasNavigationBar(this,true);
-			};
-
 			button1.Clicked += (sender, e) =>
 			{
 				var views = ((StackLayout)this.Content).Children;
@@ -50,17 +42,6 @@ namespace XF13TPSample
 			{
 				await this.Navigation.PushAsync(new StylesPage ());
 			};
-		}
-
-		protected override void OnParentSet ()
-		{
-			NavigationPage.SetHasNavigationBar(this,false);
-			base.OnParentSet ();
-		}
-
-		protected override void OnAppearing ()
-		{
-			base.OnAppearing ();
 		}
 	}
 }

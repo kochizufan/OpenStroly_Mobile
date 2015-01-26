@@ -1,12 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF13TPSample", "XF13TPSample\XF13TPSample.csproj", "{E05F9117-01E4-411E-8B65-2DC0F5009300}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF13TPSample.iOS", "iOS\XF13TPSample.iOS.csproj", "{9FB60596-F404-48F1-A143-764289B6FAD2}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XF13TPSample.Android", "Android\XF13TPSample.Android.csproj", "{32C5BDFA-CC87-4798-8CAC-0D4A8F04C93C}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebViewEx", "WebViewEx", "{9B1F4E25-9C7D-40CB-A387-601FB3C85280}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tilemapjp.XF.WebViewEx", "Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj", "{F510AF5C-C03D-4EB9-9B2A-B70E835716F8}"
@@ -14,6 +8,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tilemapjp.XF.Android.WebViewEx", "Tilemapjp.XF.WebViewEx\Tilemapjp.XF.Android.WebViewEx\Tilemapjp.XF.Android.WebViewEx.csproj", "{92B99BEC-6C01-426C-B0E0-77338F55DC5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tilemapjp.XF.iOS.WebViewEx", "Tilemapjp.XF.WebViewEx\Tilemapjp.XF.iOS.WebViewEx\Tilemapjp.XF.iOS.WebViewEx.csproj", "{93C0E125-E2C5-4FCF-95C9-24A7F42863D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stroly", "Stroly\Stroly.csproj", "{E05F9117-01E4-411E-8B65-2DC0F5009300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stroly.Android", "Stroly.Android\Stroly.Android.csproj", "{32C5BDFA-CC87-4798-8CAC-0D4A8F04C93C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stroly.iOS", "Stroly.iOS\Stroly.iOS.csproj", "{9FB60596-F404-48F1-A143-764289B6FAD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

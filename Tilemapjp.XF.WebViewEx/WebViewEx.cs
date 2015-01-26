@@ -8,7 +8,7 @@ namespace Tilemapjp.XF
 	public struct WebViewExCachedContent {
 		public string Mime;
 		public string Encoding;
-		public string Content;
+		public byte[] Content;
 	}
 
 	public delegate bool WebViewExShouldLoad (WebViewEx webView, string url);
@@ -44,6 +44,18 @@ namespace Tilemapjp.XF
 			_handleStarted.OnNext(message);
 		}
 
+	}
+
+	public static class StreamExtensions
+	{
+		public static byte[] ToByteArray(this Stream stream)
+		{
+			stream.Position = 0;
+			byte[] buffer = new byte[stream.Length];
+			for (int totalBytesCopied = 0; totalBytesCopied < stream.Length; )
+				totalBytesCopied += stream.Read(buffer, totalBytesCopied, Convert.ToInt32(stream.Length) - totalBytesCopied);
+			return buffer;
+		}
 	}
 }
 

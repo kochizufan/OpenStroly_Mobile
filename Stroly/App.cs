@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 
-namespace XF13TPSample
+namespace Stroly
 {
 	public class App : Application
 	{
@@ -17,7 +17,7 @@ namespace XF13TPSample
 
 		public static Page GetMainPage()
 		{
-			return new WebViewPage ();//SplashPage();
+			return new SplashPage ();//SplashPage();
 		}
 
 		//		protected override void OnSleep()

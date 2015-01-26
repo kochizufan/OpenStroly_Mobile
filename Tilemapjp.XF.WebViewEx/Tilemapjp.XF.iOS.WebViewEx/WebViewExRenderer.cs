@@ -75,7 +75,8 @@ namespace Tilemapjp.XF.iOS
     <p>Welcome to WebView.</p>
     </body></html>";*/
 
-			var data = NSData.FromString(content);
+			var data = NSData.FromArray (content);
+			//var data = NSData.FromString(content);
 
 			var res = new NSUrlResponse (request.Url, mime, (int)data.Length, encoding);
 

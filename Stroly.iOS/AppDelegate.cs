@@ -9,7 +9,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 using Tilemapjp.XF.iOS;
 
-namespace XF13TPSample.iOS
+namespace Stroly.iOS
 {
 	[Register ("AppDelegate")]
 	public partial class AppDelegate : Xamarin.Forms.Platform.iOS.FormsApplicationDelegate

@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace XF13TPSample.iOS
+namespace Stroly.iOS
 {
 	public class Application
 	{
