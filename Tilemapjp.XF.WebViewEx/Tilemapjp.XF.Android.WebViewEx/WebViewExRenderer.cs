@@ -78,7 +78,7 @@ namespace Tilemapjp.XF.Android
 			var webViewEx = (WebViewEx)Renderer.Element;
 			webViewEx.RaiseHandleStarted(new HandleStartedMessage(){ Uri = new Uri(Url)});
 
-			return webViewEx.ShouldLoad == null ? true : webViewEx.ShouldLoad(webViewEx, Url);
+			return webViewEx.ShouldLoad == null ? false : !webViewEx.ShouldLoad(webViewEx, Url);
 		}
 	}
 }

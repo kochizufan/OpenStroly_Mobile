@@ -14,7 +14,7 @@ namespace XF13TPSample
 
 			WebViewEx web = this.webView;
 			web.ShouldLoad = (WebViewEx WebViewEx, string url) => {
-				return false;
+				return true;
 			};
 			web.UseCachedContent = (string url) => {
 				return new WebViewExCachedContent {

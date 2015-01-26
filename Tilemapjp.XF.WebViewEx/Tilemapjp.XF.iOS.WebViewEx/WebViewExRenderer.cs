@@ -57,20 +57,23 @@ namespace Tilemapjp.XF.iOS
 
 		public override NSCachedUrlResponse CachedResponseForRequest (NSUrlRequest request)
 		{
-			//if (WebViewEx._UseCachedContent == null)
-			//	return null;
+			if (WebViewEx._UseCachedContent == null)
+				return null;
 
-			//var ncached = WebViewEx._UseCachedContent (request.Url.ToString ());
-			//if (!ncached.HasValue)
-			//	return null;
-			//var cached = ncached.Value;
+			var ncached = WebViewEx._UseCachedContent (request.Url.ToString ());
+			if (!ncached.HasValue)
+				return null;
+			var cached = ncached.Value;
 
-			var mime = "text/html";
+			var mime     = cached.Mime;
+			var encoding = cached.Encoding;
+			var content  = cached.Content;
+			/*var mime = "text/html";
 			var encoding = "UTF-8";
 			var content  = @"<html><body>
     <h1>Xamarin.Forms</h1>
     <p>Welcome to WebView.</p>
-    </body></html>";
+    </body></html>";*/
 
 			var data = NSData.FromString(content);
 
