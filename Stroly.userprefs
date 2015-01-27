@@ -1,1 +1,17 @@
-﻿<Properties StartupItem="Stroly.Android/Stroly.Android.csproj" />
+﻿<Properties StartupItem="Stroly.Android/Stroly.Android.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.1ab27261" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly.Android/SplashPageRenderer.cs">
+    <Files>
+      <File FileName="Stroly/SplashPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Stroly.Android/SplashPageRenderer.cs" Line="3" Column="3" />
+      <File FileName="Stroly.iOS/SplashPageRenderer.cs" Line="4" Column="4" />
+      <File FileName="Stroly.Android/MainActivity.cs" Line="4" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../MapApp/AtCreationApp/TileMapJP/TileMapJP.Shared/src/Core/Mvvm/ListController.cs" line="55" offsetX="452" offsetY="810" expression="ret" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

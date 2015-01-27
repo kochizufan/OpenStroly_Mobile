@@ -10,6 +10,7 @@ using Android.OS;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using AndView = Android.Views.View;
 
 namespace Stroly.Android
 {

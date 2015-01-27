@@ -72,6 +72,16 @@ namespace Stroly
 			NavigationPage.SetHasNavigationBar(this,false);
 			base.OnParentSet ();
 		}
+
+		public void WillAppear ()
+		{
+			NavigationPage.SetHasNavigationBar(this,false);
+		}
+
+		public void DidDisappear ()
+		{
+			NavigationPage.SetHasNavigationBar(this,true);
+		}
 	}
 }
 
