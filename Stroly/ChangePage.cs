@@ -42,6 +42,10 @@ namespace Stroly
 			{
 				await this.Navigation.PushAsync(new StylesPage ());
 			};
+
+			this.Appearing += (object sender, EventArgs e) => {
+				NavigationPage.SetHasNavigationBar(this,true);
+			};
 		}
 	}
 }

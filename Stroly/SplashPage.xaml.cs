@@ -25,10 +25,6 @@ namespace Stroly
 			this.Appearing += (object sender, EventArgs e) => {
 				NavigationPage.SetHasNavigationBar(this,false);
 			};
-
-			this.Disappearing += (object sender, EventArgs e) => {
-				NavigationPage.SetHasNavigationBar(this,true);
-			};
 		}
 
 		protected bool ShouldLoad (WebViewEx WebViewEx, string url)
@@ -75,11 +71,6 @@ namespace Stroly
 		{
 			NavigationPage.SetHasNavigationBar(this,false);
 			base.OnParentSet ();
-		}
-
-		protected override void OnAppearing ()
-		{
-			base.OnAppearing ();
 		}
 	}
 }
