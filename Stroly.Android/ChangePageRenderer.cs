@@ -1,20 +1,23 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
+using Stroly;
+using Stroly.Android;
+using Android.App;
+
+[assembly: ExportRenderer (typeof (ChangePage), typeof (ChangePageRenderer))]
 
 namespace Stroly.Android
 {
-	public class ChangePageRenderer : ContentPage
+	public class ChangePageRenderer : PageRenderer
 	{
-		public ChangePageRenderer ()
+		protected override void OnElementChanged (ElementChangedEventArgs<Page> e)
 		{
-			Content = new StackLayout { 
-				Children = {
-					new Label { Text = "Hello ContentPage" }
-				}
-			};
+			base.OnElementChanged (e);
+			var frag = ((Activity)this.Context).FragmentManager;
+			Console.WriteLine ("######2 {0}",frag);
 		}
+
 	}
 }
-
-
