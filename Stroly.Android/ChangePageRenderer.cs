@@ -12,12 +12,6 @@ namespace Stroly.Android
 {
 	public class ChangePageRenderer : PageRenderer
 	{
-		protected override void OnElementChanged (ElementChangedEventArgs<Page> e)
-		{
-			base.OnElementChanged (e);
-			var frag = ((Activity)this.Context).FragmentManager;
-			Console.WriteLine ("######2 {0}",frag);
-		}
 
 	}
 }
