@@ -8,6 +8,7 @@ using Android.App;
 
 using AndView = Android.Views.View;
 using System.Reflection;
+using Android.Graphics;
 
 [assembly: ExportRenderer (typeof (NavigationPage), typeof (NavigationPageRenderer))]
 
@@ -15,14 +16,10 @@ namespace Stroly.Android
 {
 	public class NavigationPageRenderer : NavigationRenderer
 	{
-		protected override void OnElementChanged (ElementChangedEventArgs<NavigationPage> e)
-		{
-			base.OnElementChanged (e);
-		}
-
 		protected override System.Threading.Tasks.Task<bool> OnPushAsync (Page view, bool animated)
 		{
-			var navPages = ((NavigationPage)this.Element).Navigation.NavigationStack;
+			var nav      = ((NavigationPage)this.Element);
+			var navPages = nav.Navigation.NavigationStack;
 
 			if (navPages.Count > 0) {
 				var oldPage = navPages[navPages.Count-1];
@@ -45,14 +42,15 @@ namespace Stroly.Android
 
 		protected override System.Threading.Tasks.Task<bool> OnPopViewAsync (Page page, bool animated)
 		{
+			var nav      = ((NavigationPage)this.Element);
+			var navPages = nav.Navigation.NavigationStack;
+
 			var delPage = page;
 			var delType = delPage.GetType();
 			var dmi = delType.GetRuntimeMethod("DidDisappear",new Type[]{});
 			if (dmi != null) {
 				dmi.Invoke(delPage,null);
 			}
-
-			var navPages = ((NavigationPage)this.Element).Navigation.NavigationStack;
 
 			if (navPages.Count > 1) {
 				var newPage = navPages[navPages.Count-2];
