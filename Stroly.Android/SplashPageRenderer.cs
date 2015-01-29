@@ -22,15 +22,14 @@ namespace Stroly.Android
 		protected override void OnAttachedToWindow ()
 		{
 			base.OnAttachedToWindow ();
-			var navR = (NavigationRenderer)this.Parent.Parent;
-			var navP = (NavigationPage)navR.Element;
-			navR.
-			navP.ChildAdded += (object sender, ElementEventArgs e1) => {
-				Console.WriteLine("Pushed {0}",e1);
-			};
-			navP.ChildRemoved += (object sender, ElementEventArgs e1) => {
-				Console.WriteLine("Popped {0}",e1);
-			};
+			//var navR = (NavigationRenderer)this.Parent.Parent;
+			//var navP = (NavigationPage)navR.Element;
+			//navP.ChildAdded += (object sender, ElementEventArgs e1) => {
+			//	Console.WriteLine("Pushed {0}",e1);
+			//};
+			//navP.ChildRemoved += (object sender, ElementEventArgs e1) => {
+			//	Console.WriteLine("Popped {0}",e1);
+			//};
 		}
 	}
 }

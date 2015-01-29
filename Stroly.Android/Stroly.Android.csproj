@@ -82,6 +82,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SplashPageRenderer.cs" />
     <Compile Include="ChangePageRenderer.cs" />
+    <Compile Include="NavigationPageRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

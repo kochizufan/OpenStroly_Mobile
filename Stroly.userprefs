@@ -1,15 +1,17 @@
 ﻿<Properties StartupItem="Stroly.Android/Stroly.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly.Android/SplashPageRenderer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.1ab27261" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly.Android/NavigationPageRenderer.cs">
     <Files>
-      <File FileName="Stroly/SplashPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Stroly/ChangePage.cs" Line="1" Column="1" />
-      <File FileName="Stroly.Android/SplashPageRenderer.cs" Line="9" Column="9" />
-      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.iOS.WebViewEx/WebViewExRenderer.cs" Line="1" Column="1" />
-      <File FileName="Stroly.iOS/SplashPageRenderer.cs" Line="3" Column="3" />
+      <File FileName="Stroly/App.cs" Line="1" Column="1" />
+      <File FileName="Stroly.Android/SplashPageRenderer.cs" Line="1" Column="1" />
+      <File FileName="Stroly.Android/ChangePageRenderer.cs" Line="1" Column="1" />
       <File FileName="Stroly.Android/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="Stroly/content/tilemap.jp/default.html" Line="1" Column="1" />
-      <File FileName="Stroly.Android/ChangePageRenderer.cs" Line="3" Column="3" />
+      <File FileName="Stroly/SplashPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Stroly.iOS/SplashPageRenderer.cs" Line="6" Column="6" />
+      <File FileName="Stroly.Android/NavigationPageRenderer.cs" Line="30" Column="30" />
+      <File FileName="Stroly/ChangePage.cs" Line="6" Column="6" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/WebViewExRenderer.cs" Line="1" Column="1" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.iOS.WebViewEx/WebViewExRenderer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

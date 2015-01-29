@@ -11,7 +11,7 @@ namespace Stroly.iOS
 {
 	public class SplashPageRenderer : PageRenderer
 	{
-		public override void ViewWillAppear (bool animated)
+		/*public override void ViewWillAppear (bool animated)
 		{
 			base.ViewWillAppear (animated);
 			((SplashPage)this.Element).WillAppear ();
@@ -21,7 +21,7 @@ namespace Stroly.iOS
 		{
 			base.ViewDidDisappear (animated);
 			((SplashPage)this.Element).DidDisappear ();
-		}
+		}*/
 	}
 }
 
