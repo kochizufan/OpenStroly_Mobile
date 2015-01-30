@@ -1,6 +1,6 @@
 ﻿using System;
-
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace Stroly
 {
@@ -11,10 +11,10 @@ namespace Stroly
 			var datePicker = new DatePicker { };
 			var timePicker = new TimePicker { };
 			var button1 = new Button {
-				Text = "ChangeUpper"
+				Text = Strings.ChangeUpper
 			};
 			var button2 = new Button {
-				Text = "NextPage"
+				Text = Strings.NextPage
 			};
 
 			Content = new StackLayout {

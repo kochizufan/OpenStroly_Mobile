@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Stroly.StylesPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="Stroly.StylesPage"
+	xmlns:i18n="clr-namespace:Stroly;assembly=Stroly">
 	<ContentPage.Resources>
 		<ResourceDictionary>
 			<Style x:Key="LabelStyle" TargetType="Label">
@@ -13,7 +16,7 @@
 
 	<ContentPage.Content>
 		<Label
-			Text="Hello Styles!"
+			Text="{i18n:Translate NextPage}"
 			Style="{StaticResource LabelStyle}">
 			<Label.GestureRecognizers>
         		<TapGestureRecognizer

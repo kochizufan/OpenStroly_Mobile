@@ -10,6 +10,7 @@ namespace Stroly
 		{
 			var page = new NavigationPage (App.GetMainPage());
 			NavigationPage.SetHasNavigationBar(page,false);
+			Strings.Culture = DependencyService.Get<ILocalize>().GetCurrentCultureInfo();
 			//var page = new CarouselPage ();
 			//page.Children.Add (new StylesPage ());
 			//page.Children.Add (new TriggersPage ());
