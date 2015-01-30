@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+	<data name="ChangeUpperContent" xml:space="preserve">
+    	<value>Change control above</value>
+	</data>
+	<data name="NextPage" xml:space="preserve">
+    	<value>Show next page</value>
+	</data>
 	<resheader name="resmimetype">
 		<value>text/microsoft-resx</value>
 	</resheader>
@@ -12,12 +18,4 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-	<data name="ChangeUpper" xml:space="preserve">
-    	<value>Change control above</value>
-	    <comment></comment>
-	</data>
-	<data name="NextPage" xml:space="preserve">
-    	<value>Show next page</value>
-	    <comment></comment>
-	</data>
 </root>

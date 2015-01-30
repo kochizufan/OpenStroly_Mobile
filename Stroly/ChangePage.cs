@@ -11,7 +11,7 @@ namespace Stroly
 			var datePicker = new DatePicker { };
 			var timePicker = new TimePicker { };
 			var button1 = new Button {
-				Text = Strings.ChangeUpper
+				Text = Strings.ChangeUpperContent
 			};
 			var button2 = new Button {
 				Text = Strings.NextPage

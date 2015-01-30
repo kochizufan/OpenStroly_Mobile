@@ -47,9 +47,9 @@ namespace Stroly {
             }
         }
         
-        internal static string ChangeUpper {
+        internal static string ChangeUpperContent {
             get {
-                return ResourceManager.GetString("ChangeUpper", resourceCulture);
+                return ResourceManager.GetString("ChangeUpperContent", resourceCulture);
             }
         }
         
