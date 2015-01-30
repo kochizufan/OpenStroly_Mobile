@@ -94,6 +94,9 @@
     <Reference Include="SharpCompress">
       <HintPath>..\packages\sharpcompress.0.10.3\lib\portable-net4+sl5+wp8+win8\SharpCompress.dll</HintPath>
     </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\packages\Antlr3.Runtime.PCL.3.5.0.3\lib\portable-win+net40+sl40+wp\Antlr3.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
