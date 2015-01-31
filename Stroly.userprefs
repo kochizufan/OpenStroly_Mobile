@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Stroly.Android/Stroly.Android.csproj">
+﻿<Properties StartupItem="Stroly.iOS/Stroly.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.tilemapper2" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Stroly/SplashPage.xaml.cs">
     <Files>

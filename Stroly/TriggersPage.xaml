@@ -3,10 +3,7 @@
 	<ContentPage.Content>
 		<Switch
 			HorizontalOptions="Center"
-			VerticalOptions="Center"
-			WidthRequest="100"
-			HeightRequest="100"
-			>
+			VerticalOptions="Center">
 			<Switch.Triggers>
 				<Trigger TargetType="Switch" Property="Switch.IsToggled" Value="true">
 					<Setter Property="Switch.Rotation" Value="90"/>

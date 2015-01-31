@@ -44,18 +44,21 @@ namespace Stroly
 	[ContentProperty ("Text")]
 	public class TranslateExtension : IMarkupExtension
 	{
-		readonly CultureInfo ci;
-		const string ResourceId = "Stroly.i18n.Strings";
+		//readonly CultureInfo ci;
+		//const string ResourceId = "Stroly.i18n.Strings";
+		Translate translate;
 
 		public TranslateExtension() {
-			ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo ();
+			//ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo ();
+			translate = new Translate ();
 		}
 
 		public string Text { get; set; }
 
 		public object ProvideValue (IServiceProvider serviceProvider)
 		{
-			if (Text == null)
+			return translate.TextValue (Text);
+			/*if (Text == null)
 				return "";
 
 			ResourceManager resmgr = new ResourceManager(ResourceId
@@ -69,10 +72,10 @@ namespace Stroly
 					String.Format ("Key '{0}' was not found in resources '{1}' for culture '{2}'.", Text, ResourceId, ci.Name),
 					"Text");
 				#else
-				translation = text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
+				translation = Text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
 				#endif
 			}
-			return translation;
+			return translation;*/
 		}
 	}
 }
