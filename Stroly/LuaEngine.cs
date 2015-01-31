@@ -3,7 +3,7 @@ using NLua;
 using Stroly;
 #if __ANDROID__
 using Stroly.Android;
-#else
+#elif __IOS__
 using Stroly.iOS;
 #endif
 using Xamarin.Forms;
@@ -15,7 +15,7 @@ using System.IO;
 
 #if __ANDROID__
 namespace Stroly.Android
-#else
+#elif __IOS__
 namespace Stroly.iOS
 #endif
 {
@@ -25,14 +25,40 @@ namespace Stroly.iOS
 
 		public LuaEngine ()
 		{
-			state = new Lua();
+			state = new Lua ();
 			state.LoadCLRPackage ();
 
 			var slt2String = LuaLibrary.Slt2 ();
-			var slt2 = state.DoString (slt2String)[0];
+			var slt2 = state.DoString (slt2String) [0];
 			state ["slt2"] = slt2;
 
+			var translate = new Translate ();
+			state ["trans"] = translate;
+			state.DoString (@"
+function translate (val)
+    return trans:TextValue(val)
+end
+
+function template (val)
+	local tmpl = slt2.loadstring(val)
+    return slt2.render(tmpl, {})
+end
+");
+		}
+
+		public string AttachTemplate(string template)
+		{
+			/*state ["_template"] = template;
 			var result = state.DoString (@"
+return slt2.loadstring(_template);
+")[0];
+			return (string)result;*/
+
+			var func = state ["template"] as LuaFunction;
+			var result = func.Call (template);
+			return (string)result[0];
+		}
+/*			var result = state.DoString (@"
 local user = {
     name = '<world>'
 }
@@ -61,7 +87,12 @@ Hello, #{= escapeHTML(user.name) }#!
 return slt2.render(tmpl, {user = user})
 ")[0];
 			Console.WriteLine (result);
+
+			result = state.DoString (@"
+return translate(""ChangeUpperContent"");
+")[0];
+			Console.WriteLine (result);
 			Console.WriteLine ("{0}",state.DoString("return math.sin (10)*10 + 7")[0]);
-		}
+		}*/
 	}
 }

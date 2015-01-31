@@ -5,6 +5,7 @@ using System.Reflection;
 using Xamarin.Forms;
 using Tilemapjp.XF;
 using System.IO;
+using System.Text;
 
 namespace Stroly
 {
@@ -25,6 +26,8 @@ namespace Stroly
 			this.Appearing += (object sender, EventArgs e) => {
 				NavigationPage.SetHasNavigationBar(this,false);
 			};
+
+			var lua = DependencyService.Get<ILuaEngine> ();
 		}
 
 		protected bool ShouldLoad (WebViewEx WebViewEx, string url)
@@ -58,6 +61,13 @@ namespace Stroly
 				//var content = reader.ReadToEnd();
 				var content = manifestResourceStream.ToByteArray ();
 
+				var contentString = Encoding.UTF8.GetString(content,0,content.Length);
+				if (contentString.Contains ("#{")) {
+					var trans = DependencyService.Get<ILuaEngine> ();
+					contentString = trans.AttachTemplate (contentString);
+					content = Encoding.UTF8.GetBytes (contentString);
+				}
+					
 				return new WebViewExCachedContent {
 					Mime = "text/html",
 					Encoding = "UTF-8",

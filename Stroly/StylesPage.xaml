@@ -16,7 +16,7 @@
 
 	<ContentPage.Content>
 		<Label
-			Text="{i18n:Translate NextPage}"
+			Text="{i18n:translate NextPage}"
 			Style="{StaticResource LabelStyle}">
 			<Label.GestureRecognizers>
         		<TapGestureRecognizer

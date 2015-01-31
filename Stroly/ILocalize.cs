@@ -12,11 +12,40 @@ namespace Stroly
 		CultureInfo GetCurrentCultureInfo ();
 	}
 
+	public class Translate
+	{
+		readonly CultureInfo ci;
+		const string ResourceId = "Stroly.i18n.Strings";
+
+		public Translate() {
+			ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo ();
+		}
+
+		public string TextValue(string text)
+		{
+			ResourceManager resmgr = new ResourceManager(ResourceId
+				, typeof(Translate).GetTypeInfo().Assembly);
+
+			var translation = resmgr.GetString (text, ci);
+
+			if (translation == null) {
+				#if DEBUG
+				throw new ArgumentException (
+					String.Format ("Key '{0}' was not found in resources '{1}' for culture '{2}'.", text, ResourceId, ci.Name),
+					"Text");
+				#else
+				translation = text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
+				#endif
+			}
+			return translation;
+		}
+	}
+
 	[ContentProperty ("Text")]
 	public class TranslateExtension : IMarkupExtension
 	{
 		readonly CultureInfo ci;
-		const string ResourceId = "UsingResxLocalization.Resx.AppResources";
+		const string ResourceId = "Stroly.i18n.Strings";
 
 		public TranslateExtension() {
 			ci = DependencyService.Get<ILocalize>().GetCurrentCultureInfo ();
@@ -40,7 +69,7 @@ namespace Stroly
 					String.Format ("Key '{0}' was not found in resources '{1}' for culture '{2}'.", Text, ResourceId, ci.Name),
 					"Text");
 				#else
-				translation = Text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
+				translation = text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
 				#endif
 			}
 			return translation;

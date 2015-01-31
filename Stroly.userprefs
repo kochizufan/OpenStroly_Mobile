@@ -1,21 +1,20 @@
 ﻿<Properties StartupItem="Stroly.Android/Stroly.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.1ab27261" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly.Android/NavigationPageRenderer.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.tilemapper2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly/SplashPage.xaml.cs">
     <Files>
+      <File FileName="Stroly/LuaEngine.cs" Line="1" Column="1" />
+      <File FileName="Stroly.iOS/AppDelegate.cs" Line="1" Column="1" />
       <File FileName="Stroly/App.cs" Line="1" Column="1" />
-      <File FileName="Stroly.Android/SplashPageRenderer.cs" Line="1" Column="1" />
-      <File FileName="Stroly.Android/ChangePageRenderer.cs" Line="1" Column="1" />
-      <File FileName="Stroly.Android/MainActivity.cs" Line="1" Column="1" />
       <File FileName="Stroly/SplashPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Stroly.iOS/SplashPageRenderer.cs" Line="6" Column="6" />
-      <File FileName="Stroly.Android/NavigationPageRenderer.cs" Line="30" Column="30" />
-      <File FileName="Stroly/ChangePage.cs" Line="6" Column="6" />
-      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/WebViewExRenderer.cs" Line="1" Column="1" />
-      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.iOS.WebViewEx/WebViewExRenderer.cs" Line="1" Column="1" />
+      <File FileName="Stroly/ILocalize.cs" Line="23" Column="23" />
+      <File FileName="Stroly/StylesPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Stroly/StylesPage.xaml" Line="25" Column="25" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/kokogiko/Projects/Stroly/Stroly.iOS/LuaEngine.cs" line="64" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
