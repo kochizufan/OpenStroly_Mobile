@@ -6,6 +6,9 @@
 	<data name="NextPage" xml:space="preserve">
     	<value>次のページを表示</value>
 	</data>
+	<data name="_map_list_" xml:space="preserve">
+    	<value>こちずリスト</value>
+	</data>
 	<resheader name="resmimetype">
 		<value>text/microsoft-resx</value>
 	</resheader>

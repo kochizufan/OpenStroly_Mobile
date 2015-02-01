@@ -48,6 +48,10 @@
     <Compile Include="ILocalize.cs" />
     <Compile Include="i18n\Strings.Designer.cs" />
     <Compile Include="ILuaEngine.cs" />
+    <Compile Include="i18n\Strings.ja.Designer.cs">
+      <DependentUpon>Strings.ja.resx</DependentUpon>
+    </Compile>
+    <Compile Include="IInternalResource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -92,12 +96,12 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="i18n\Strings.resx" />
-    <EmbeddedResource Include="i18n\Strings.en-US.resx" />
     <EmbeddedResource Include="i18n\Strings.ja.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.ja.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="slt2.lua" />
+    <EmbeddedResource Include="content\tilemap.jp\KochizuBurari\menu.html" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
@@ -109,5 +113,6 @@
     <Folder Include="content\" />
     <Folder Include="res\" />
     <Folder Include="i18n\" />
+    <Folder Include="content\tilemap.jp\KochizuBurari\" />
   </ItemGroup>
 </Project>

@@ -29,13 +29,13 @@ namespace Stroly
 			var translation = resmgr.GetString (text, ci);
 
 			if (translation == null) {
-				#if DEBUG
-				throw new ArgumentException (
-					String.Format ("Key '{0}' was not found in resources '{1}' for culture '{2}'.", text, ResourceId, ci.Name),
-					"Text");
-				#else
+				//#if DEBUG
+				//throw new ArgumentException (
+				//	String.Format ("Key '{0}' was not found in resources '{1}' for culture '{2}'.", text, ResourceId, ci.Name),
+				//	"Text");
+				//#else
 				translation = text; // HACK: returns the key, which GETS DISPLAYED TO THE USER
-				#endif
+				//#endif
 			}
 			return translation;
 		}

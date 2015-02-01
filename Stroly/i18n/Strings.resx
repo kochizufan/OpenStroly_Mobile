@@ -6,6 +6,9 @@
 	<data name="NextPage" xml:space="preserve">
     	<value>Show next page</value>
 	</data>
+	<data name="_map_list_" xml:space="preserve">
+    	<value>Map List</value>
+	</data>
 	<resheader name="resmimetype">
 		<value>text/microsoft-resx</value>
 	</resheader>

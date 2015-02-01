@@ -20,7 +20,7 @@ namespace Stroly
 			web.UseCachedContent = UseCachedContent;
 
 			var urlSource = new UrlWebViewSource ();
-			urlSource.Url = "http://tilemap.jp/default.html";
+			urlSource.Url = "http://tilemap.jp/KochizuBurari/menu.html";
 			web.Source = urlSource;
 
 			this.Appearing += (object sender, EventArgs e) => {
@@ -73,6 +73,8 @@ namespace Stroly
 					Encoding = "UTF-8",
 					Content = content
 				};
+			} else if (url.StartsWith("stroly.internalresource")) {
+				var inter = DependencyService.Get<IInternalResource> ();
 			}
 			return null;
 		}
