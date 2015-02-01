@@ -27,6 +27,7 @@ namespace Stroly.Android
 		public static void UpdateIdValues()
 		{
 			global::OsmSharp.Android.UI.Resource.String.library_name = global::Stroly.Android.Resource.String.library_name;
+			global::Splat.Resource.String.library_name = global::Stroly.Android.Resource.String.library_name;
 			global::Tilemapjp.XF.Android.Resource.String.library_name = global::Stroly.Android.Resource.String.library_name;
 		}
 		

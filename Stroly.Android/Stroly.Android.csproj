@@ -103,6 +103,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Splat">
+      <HintPath>..\packages\Splat.1.6.0\lib\monoandroid\Splat.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">
@@ -122,40 +125,43 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SplashPageRenderer.cs" />
-    <Compile Include="ChangePageRenderer.cs" />
-    <Compile Include="NavigationPageRenderer.cs" />
-    <Compile Include="Localize.cs" />
     <Compile Include="..\Stroly\LuaEngine.cs">
-      <Link>LuaEngine.cs</Link>
+      <Link>Services\LuaEngine.cs</Link>
     </Compile>
-    <Compile Include="InternalResource.cs" />
+    <Compile Include="Services\InternalResource.cs" />
+    <Compile Include="Services\Localize.cs" />
+    <Compile Include="Pages\ChangePageRenderer.cs" />
+    <Compile Include="Pages\NavigationPageRenderer.cs" />
+    <Compile Include="Pages\SplashPageRenderer.cs" />
+    <Compile Include="Services\DeviceProperty.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="packages.config" />
+    <None Include="Resources\drawable\Default_568h_2x.png" />
+    <None Include="Resources\drawable\Default_Landscape.png" />
+    <None Include="Resources\drawable\Default_Portrait.png" />
+    <None Include="Resources\drawable\Default.png" />
+    <None Include="Resources\drawable\Default_2x.png" />
+    <None Include="Resources\drawable-ja\Default_568h_2x.png" />
+    <None Include="Resources\drawable-ja\Default_Landscape.png" />
+    <None Include="Resources\drawable-ja\Default_Portrait.png" />
+    <None Include="Resources\drawable-ja\Default.png" />
+    <None Include="Resources\drawable-ja\Default_2x.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
-    <AndroidResource Include="Resources\drawable\Default-568h%402x.png" />
-    <AndroidResource Include="Resources\drawable\Default-Landscape.png" />
-    <AndroidResource Include="Resources\drawable\Default-Portrait.png" />
-    <AndroidResource Include="Resources\drawable\Default.png" />
-    <AndroidResource Include="Resources\drawable\Default%402x.png" />
-    <AndroidResource Include="Resources\drawable-ja\Default-568h%402x.png" />
-    <AndroidResource Include="Resources\drawable-ja\Default-Landscape.png" />
-    <AndroidResource Include="Resources\drawable-ja\Default-Portrait.png" />
-    <AndroidResource Include="Resources\drawable-ja\Default.png" />
-    <AndroidResource Include="Resources\drawable-ja\Default%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.1.6296\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
     <Folder Include="Resources\drawable-ja\" />
+    <Folder Include="Services\" />
+    <Folder Include="Pages\" />
   </ItemGroup>
 </Project>

@@ -27,7 +27,10 @@ namespace Stroly
 				NavigationPage.SetHasNavigationBar(this,false);
 			};
 
-			var lua = DependencyService.Get<ILuaEngine> ();
+			var disp = DependencyService.Get<IDeviceProperty> ();
+			System.Diagnostics.Debug.WriteLine ("########## Density: {0}", disp.ScreenDensity ());
+			System.Diagnostics.Debug.WriteLine ("########## Width: {0}", disp.DisplayDpSize().Width);
+			System.Diagnostics.Debug.WriteLine ("########## Height: {0}", disp.DisplayDpSize().Height);
 		}
 
 		protected bool ShouldLoad (WebViewEx WebViewEx, string url)
@@ -79,11 +82,11 @@ namespace Stroly
 			return null;
 		}
 
-		protected override void OnParentSet ()
+		/*protected override void OnParentSet ()
 		{
 			NavigationPage.SetHasNavigationBar(this,false);
 			base.OnParentSet ();
-		}
+		}*/
 
 		public void WillAppear ()
 		{
