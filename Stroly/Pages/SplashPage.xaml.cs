@@ -15,9 +15,13 @@ namespace Stroly
 		{
 			InitializeComponent ();
 
+			this.BackgroundColor = Color.FromHex ("#ff0000");
+
 			WebViewEx web = this.webView;
 			web.ShouldLoad = ShouldLoad;
 			web.UseCachedContent = UseCachedContent;
+			web.WidthRequest = 200.0;
+			web.HeightRequest = 400.0;
 
 			var urlSource = new UrlWebViewSource ();
 			urlSource.Url = "http://tilemap.jp/KochizuBurari/menu.html";
