@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="OpenStroly.SplashPage"
+    xmlns:local="clr-namespace:Tilemapjp.XF;assembly=Tilemapjp.XF.WebViewEx">
+    <ContentPage.Content>
+    <local:WebViewEx 
+    	x:Name="webView"
+    	VerticalOptions="Center"
+    	HorizontalOptions="Center" />
+    </ContentPage.Content>
+</ContentPage>	
