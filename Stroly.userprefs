@@ -1,10 +1,10 @@
 ﻿<Properties StartupItem="Stroly.Android/Stroly.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.1ab27261" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly/Pages/SplashPage.xaml.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Android4.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly/Services/DeviceData.cs">
     <Files>
-      <File FileName="Stroly/Pages/SplashPage.xaml" Line="16" Column="16" />
-      <File FileName="Stroly/Pages/SplashPage.xaml.cs" Line="53" Column="53" />
-      <File FileName="Stroly.iOS/Pages/SplashPageRenderer.cs" Line="4" Column="4" />
+      <File FileName="Stroly/Pages/SplashPage.xaml" Line="1" Column="1" />
+      <File FileName="Stroly/Pages/SplashPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Stroly.iOS/Pages/SplashPageRenderer.cs" Line="1" Column="1" />
       <File FileName="Stroly.Android/Pages/SplashPageRenderer.cs" Line="1" Column="1" />
       <File FileName="Stroly.Android/Pages/NavigationPageRenderer.cs" Line="1" Column="1" />
       <File FileName="Stroly/content/tilemap.jp/KochizuBurari/menu.html" Line="1" Column="1" />
@@ -18,6 +18,7 @@
       <File FileName="Stroly/App.cs" Line="1" Column="1" />
       <File FileName="Stroly/Pages/StylesPage.xaml.cs" Line="1" Column="1" />
       <File FileName="Stroly/Pages/StylesPage.xaml" Line="1" Column="1" />
+      <File FileName="Stroly/Services/DeviceData.cs" Line="5" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
