@@ -1,45 +1,6 @@
 ﻿<Properties StartupItem="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.WebViewEx.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Stroly.iOS/Main.cs">
-    <Files>
-      <File FileName="Stroly/i18n/Strings.resx" Line="1" Column="1" />
-      <File FileName="Stroly/i18n/Strings.Designer.cs" Line="90" Column="90" />
-      <File FileName="Stroly/i18n/Strings.ja.resx" Line="1" Column="1" />
-      <File FileName="Stroly/Pages/ChangePage.cs" Line="30" Column="30" />
-      <File FileName="Stroly/Pages/MyPage.xaml" Line="2" Column="2" />
-      <File FileName="Stroly/Pages/MyPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="Stroly/Pages/SplashPage.xaml" Line="16" Column="16" />
-      <File FileName="Stroly/Pages/SplashPage.xaml.cs" Line="15" Column="15" />
-      <File FileName="Stroly/Pages/StylesPage.xaml" Line="15" Column="15" />
-      <File FileName="Stroly/Pages/StylesPage.xaml.cs" Line="19" Column="19" />
-      <File FileName="Stroly/Pages/TriggersPage.xaml" Line="128" Column="128" />
-      <File FileName="Stroly/Pages/TriggersPage.xaml.cs" Line="15" Column="15" />
-      <File FileName="Stroly/Services/DeviceData.cs" Line="15" Column="15" />
-      <File FileName="Stroly/Services/IDeviceProperty.cs" Line="15" Column="15" />
-      <File FileName="Stroly/Services/IInternalResource.cs" Line="15" Column="15" />
-      <File FileName="Stroly/Services/ILocalize.cs" Line="34" Column="34" />
-      <File FileName="Stroly/Services/ILuaEngine.cs" Line="3" Column="3" />
-      <File FileName="Stroly/App.cs" Line="30" Column="30" />
-      <File FileName="Stroly/packages.config" Line="1" Column="1" />
-      <File FileName="Stroly/slt2.lua" Line="1" Column="1" />
-      <File FileName="Stroly.Android/Pages/ChangePageRenderer.cs" Line="2" Column="2" />
-      <File FileName="Stroly.Android/Pages/NavigationPageRenderer.cs" Line="11" Column="11" />
-      <File FileName="Stroly.Android/Pages/SplashPageRenderer.cs" Line="11" Column="11" />
-      <File FileName="Stroly.Android/Resources/values/Strings.xml" Line="1" Column="1" />
-      <File FileName="Stroly.Android/Resources/values/Styles.xml" Line="1" Column="1" />
-      <File FileName="Stroly.Android/Services/DeviceProperty.cs" Line="11" Column="11" />
-      <File FileName="Stroly.Android/Services/InternalResource.cs" Line="15" Column="15" />
-      <File FileName="Stroly.Android/Services/Localize.cs" Line="11" Column="11" />
-      <File FileName="Stroly/LuaEngine.cs" Line="15" Column="15" />
-      <File FileName="Stroly.Android/MainActivity.cs" Line="15" Column="15" />
-      <File FileName="Stroly.iOS/Pages/SplashPageRenderer.cs" Line="11" Column="11" />
-      <File FileName="Stroly.iOS/Services/DeviceProperty.cs" Line="11" Column="11" />
-      <File FileName="Stroly.iOS/Services/InternalResource.cs" Line="15" Column="15" />
-      <File FileName="Stroly.iOS/Services/Localize.cs" Line="11" Column="11" />
-      <File FileName="Stroly.iOS/AppDelegate.cs" Line="15" Column="15" />
-      <File FileName="Stroly.iOS/Main.cs" Line="15" Column="15" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
