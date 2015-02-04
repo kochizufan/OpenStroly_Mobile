@@ -1,6 +1,11 @@
-﻿<Properties StartupItem="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.WebViewEx.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupItem="OpenStroly/OpenStroly.iOS/OpenStroly.iOS.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Android4.0" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OpenStroly/OpenStroly/packages.config">
+    <Files>
+      <File FileName="OpenStroly/OpenStroly/App.cs" Line="1" Column="1" />
+      <File FileName="OpenStroly/OpenStroly/packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
