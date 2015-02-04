@@ -1,7 +1,2 @@
-XamarinForms_1_3_0_TP_Sample
-============================
-
-The sample projects for Xamarin.Forms 1.3.0 Technology Preview.
-
-* `Styles`
-* `Triggers`
+# OpenStroly_Mobile
+ちずぶらりクライアントのオープンソース版です。現在開発中途です。完成後は、GPLv2と商用ライセンスのデュアルライセンスで提供の予定です。
