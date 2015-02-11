@@ -20,8 +20,9 @@ namespace OpenStroly
 			WebViewEx web = this.webView;
 			web.ShouldLoad = ShouldLoad;
 			web.UseCachedContent = UseCachedContent;
-			web.WidthRequest = 200.0;
-			web.HeightRequest = 400.0;
+			var splashSize = DeviceData.GetCompatibleSplashInfo ();
+			web.WidthRequest  = (double)splashSize.DpWidth;
+			web.HeightRequest = (double)splashSize.DpHeight;
 
 			var urlSource = new UrlWebViewSource ();
 			urlSource.Url = "http://tilemap.jp/KochizuBurari/menu.html";
@@ -31,10 +32,10 @@ namespace OpenStroly
 				NavigationPage.SetHasNavigationBar(this,false);
 			};
 
-			var disp = DependencyService.Get<IDeviceProperty> ();
-			System.Diagnostics.Debug.WriteLine ("########## Density: {0}", disp.ScreenDensity ());
-			System.Diagnostics.Debug.WriteLine ("########## Width: {0}", disp.DisplayDpSize().Width);
-			System.Diagnostics.Debug.WriteLine ("########## Height: {0}", disp.DisplayDpSize().Height);
+			//var disp = DependencyService.Get<IDeviceProperty> ();
+			//System.Diagnostics.Debug.WriteLine ("########## Density: {0}", disp.ScreenDensity ());
+			//System.Diagnostics.Debug.WriteLine ("########## Width: {0}", disp.DisplayDpSize().Width);
+			//System.Diagnostics.Debug.WriteLine ("########## Height: {0}", disp.DisplayDpSize().Height);
 		}
 
 		protected bool ShouldLoad (WebViewEx WebViewEx, string url)
