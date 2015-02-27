@@ -28,7 +28,88 @@ namespace OpenStroly.Android
 		{
 			global::OsmSharp.Android.UI.Resource.String.library_name = global::OpenStroly.Android.Resource.String.library_name;
 			global::Splat.Resource.String.library_name = global::OpenStroly.Android.Resource.String.library_name;
+			global::XLabs.Platform.Resource.String.ApplicationName = global::OpenStroly.Android.Resource.String.ApplicationName;
+			global::XLabs.Platform.Resource.String.Hello = global::OpenStroly.Android.Resource.String.Hello;
+			global::XLabs.Forms.Resource.Color.calendar_active_month_bg = global::OpenStroly.Android.Resource.Color.calendar_active_month_bg;
+			global::XLabs.Forms.Resource.Color.calendar_bg = global::OpenStroly.Android.Resource.Color.calendar_bg;
+			global::XLabs.Forms.Resource.Color.calendar_divider = global::OpenStroly.Android.Resource.Color.calendar_divider;
+			global::XLabs.Forms.Resource.Color.calendar_highlighted_day_bg = global::OpenStroly.Android.Resource.Color.calendar_highlighted_day_bg;
+			global::XLabs.Forms.Resource.Color.calendar_inactive_month_bg = global::OpenStroly.Android.Resource.Color.calendar_inactive_month_bg;
+			global::XLabs.Forms.Resource.Color.calendar_selected_day_bg = global::OpenStroly.Android.Resource.Color.calendar_selected_day_bg;
+			global::XLabs.Forms.Resource.Color.calendar_selected_range_bg = global::OpenStroly.Android.Resource.Color.calendar_selected_range_bg;
+			global::XLabs.Forms.Resource.Color.calendar_text_active = global::OpenStroly.Android.Resource.Color.calendar_text_active;
+			global::XLabs.Forms.Resource.Color.calendar_text_inactive = global::OpenStroly.Android.Resource.Color.calendar_text_inactive;
+			global::XLabs.Forms.Resource.Color.calendar_text_selected = global::OpenStroly.Android.Resource.Color.calendar_text_selected;
+			global::XLabs.Forms.Resource.Color.calendar_text_selector = global::OpenStroly.Android.Resource.Color.calendar_text_selector;
+			global::XLabs.Forms.Resource.Color.calendar_text_unselectable = global::OpenStroly.Android.Resource.Color.calendar_text_unselectable;
+			global::XLabs.Forms.Resource.Dimension.calendar_day_headers_paddingbottom = global::OpenStroly.Android.Resource.Dimension.calendar_day_headers_paddingbottom;
+			global::XLabs.Forms.Resource.Dimension.calendar_month_title_bottommargin = global::OpenStroly.Android.Resource.Dimension.calendar_month_title_bottommargin;
+			global::XLabs.Forms.Resource.Dimension.calendar_month_topmargin = global::OpenStroly.Android.Resource.Dimension.calendar_month_topmargin;
+			global::XLabs.Forms.Resource.Dimension.calendar_text_medium = global::OpenStroly.Android.Resource.Dimension.calendar_text_medium;
+			global::XLabs.Forms.Resource.Dimension.calendar_text_small = global::OpenStroly.Android.Resource.Dimension.calendar_text_small;
+			global::XLabs.Forms.Resource.Drawable.ad16 = global::OpenStroly.Android.Resource.Drawable.ad16;
+			global::XLabs.Forms.Resource.Drawable.calendar_bg_selector = global::OpenStroly.Android.Resource.Drawable.calendar_bg_selector;
+			global::XLabs.Forms.Resource.Id.calendar_grid = global::OpenStroly.Android.Resource.Id.calendar_grid;
+			global::XLabs.Forms.Resource.Id.calendar_view = global::OpenStroly.Android.Resource.Id.calendar_view;
+			global::XLabs.Forms.Resource.Id.left_arrow = global::OpenStroly.Android.Resource.Id.left_arrow;
+			global::XLabs.Forms.Resource.Id.right_arrow = global::OpenStroly.Android.Resource.Id.right_arrow;
+			global::XLabs.Forms.Resource.Id.title = global::OpenStroly.Android.Resource.Id.title;
+			global::XLabs.Forms.Resource.Layout.calendar_pager_layout = global::OpenStroly.Android.Resource.Layout.calendar_pager_layout;
+			global::XLabs.Forms.Resource.Layout.calendar_picker = global::OpenStroly.Android.Resource.Layout.calendar_picker;
+			global::XLabs.Forms.Resource.Layout.dialog = global::OpenStroly.Android.Resource.Layout.dialog;
+			global::XLabs.Forms.Resource.Layout.month = global::OpenStroly.Android.Resource.Layout.month;
+			global::XLabs.Forms.Resource.Layout.week = global::OpenStroly.Android.Resource.Layout.week;
+			global::XLabs.Forms.Resource.String.ApplicationName = global::OpenStroly.Android.Resource.String.ApplicationName;
+			global::XLabs.Forms.Resource.String.Hello = global::OpenStroly.Android.Resource.String.Hello;
+			global::XLabs.Forms.Resource.String.day_name_format = global::OpenStroly.Android.Resource.String.day_name_format;
+			global::XLabs.Forms.Resource.String.full_date_format = global::OpenStroly.Android.Resource.String.full_date_format;
+			global::XLabs.Forms.Resource.String.invalid_date = global::OpenStroly.Android.Resource.String.invalid_date;
+			global::XLabs.Forms.Resource.String.library_name = global::OpenStroly.Android.Resource.String.library_name;
+			global::XLabs.Forms.Resource.String.month_name_format = global::OpenStroly.Android.Resource.String.month_name_format;
+			global::XLabs.Forms.Resource.Style.CalendarCell = global::OpenStroly.Android.Resource.Style.CalendarCell;
+			global::XLabs.Forms.Resource.Style.CalendarCell_CalendarDate = global::OpenStroly.Android.Resource.Style.CalendarCell_CalendarDate;
+			global::XLabs.Forms.Resource.Style.CalendarCell_DayHeader = global::OpenStroly.Android.Resource.Style.CalendarCell_DayHeader;
+			global::XLabs.Forms.Resource.Style.CalendarTitle = global::OpenStroly.Android.Resource.Style.CalendarTitle;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_active_month_bg = global::OpenStroly.Android.Resource.Color.calendar_active_month_bg;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_bg = global::OpenStroly.Android.Resource.Color.calendar_bg;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_divider = global::OpenStroly.Android.Resource.Color.calendar_divider;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_highlighted_day_bg = global::OpenStroly.Android.Resource.Color.calendar_highlighted_day_bg;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_inactive_month_bg = global::OpenStroly.Android.Resource.Color.calendar_inactive_month_bg;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_selected_day_bg = global::OpenStroly.Android.Resource.Color.calendar_selected_day_bg;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_selected_range_bg = global::OpenStroly.Android.Resource.Color.calendar_selected_range_bg;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_text_active = global::OpenStroly.Android.Resource.Color.calendar_text_active;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_text_inactive = global::OpenStroly.Android.Resource.Color.calendar_text_inactive;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_text_selected = global::OpenStroly.Android.Resource.Color.calendar_text_selected;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_text_selector = global::OpenStroly.Android.Resource.Color.calendar_text_selector;
+			global::Tilemapjp.XF.Android.Resource.Color.calendar_text_unselectable = global::OpenStroly.Android.Resource.Color.calendar_text_unselectable;
+			global::Tilemapjp.XF.Android.Resource.Dimension.calendar_day_headers_paddingbottom = global::OpenStroly.Android.Resource.Dimension.calendar_day_headers_paddingbottom;
+			global::Tilemapjp.XF.Android.Resource.Dimension.calendar_month_title_bottommargin = global::OpenStroly.Android.Resource.Dimension.calendar_month_title_bottommargin;
+			global::Tilemapjp.XF.Android.Resource.Dimension.calendar_month_topmargin = global::OpenStroly.Android.Resource.Dimension.calendar_month_topmargin;
+			global::Tilemapjp.XF.Android.Resource.Dimension.calendar_text_medium = global::OpenStroly.Android.Resource.Dimension.calendar_text_medium;
+			global::Tilemapjp.XF.Android.Resource.Dimension.calendar_text_small = global::OpenStroly.Android.Resource.Dimension.calendar_text_small;
+			global::Tilemapjp.XF.Android.Resource.Drawable.ad16 = global::OpenStroly.Android.Resource.Drawable.ad16;
+			global::Tilemapjp.XF.Android.Resource.Drawable.calendar_bg_selector = global::OpenStroly.Android.Resource.Drawable.calendar_bg_selector;
+			global::Tilemapjp.XF.Android.Resource.Id.calendar_grid = global::OpenStroly.Android.Resource.Id.calendar_grid;
+			global::Tilemapjp.XF.Android.Resource.Id.calendar_view = global::OpenStroly.Android.Resource.Id.calendar_view;
+			global::Tilemapjp.XF.Android.Resource.Id.left_arrow = global::OpenStroly.Android.Resource.Id.left_arrow;
+			global::Tilemapjp.XF.Android.Resource.Id.right_arrow = global::OpenStroly.Android.Resource.Id.right_arrow;
+			global::Tilemapjp.XF.Android.Resource.Id.title = global::OpenStroly.Android.Resource.Id.title;
+			global::Tilemapjp.XF.Android.Resource.Layout.calendar_pager_layout = global::OpenStroly.Android.Resource.Layout.calendar_pager_layout;
+			global::Tilemapjp.XF.Android.Resource.Layout.calendar_picker = global::OpenStroly.Android.Resource.Layout.calendar_picker;
+			global::Tilemapjp.XF.Android.Resource.Layout.dialog = global::OpenStroly.Android.Resource.Layout.dialog;
+			global::Tilemapjp.XF.Android.Resource.Layout.month = global::OpenStroly.Android.Resource.Layout.month;
+			global::Tilemapjp.XF.Android.Resource.Layout.week = global::OpenStroly.Android.Resource.Layout.week;
+			global::Tilemapjp.XF.Android.Resource.String.ApplicationName = global::OpenStroly.Android.Resource.String.ApplicationName;
+			global::Tilemapjp.XF.Android.Resource.String.Hello = global::OpenStroly.Android.Resource.String.Hello;
+			global::Tilemapjp.XF.Android.Resource.String.day_name_format = global::OpenStroly.Android.Resource.String.day_name_format;
+			global::Tilemapjp.XF.Android.Resource.String.full_date_format = global::OpenStroly.Android.Resource.String.full_date_format;
+			global::Tilemapjp.XF.Android.Resource.String.invalid_date = global::OpenStroly.Android.Resource.String.invalid_date;
 			global::Tilemapjp.XF.Android.Resource.String.library_name = global::OpenStroly.Android.Resource.String.library_name;
+			global::Tilemapjp.XF.Android.Resource.String.month_name_format = global::OpenStroly.Android.Resource.String.month_name_format;
+			global::Tilemapjp.XF.Android.Resource.Style.CalendarCell = global::OpenStroly.Android.Resource.Style.CalendarCell;
+			global::Tilemapjp.XF.Android.Resource.Style.CalendarCell_CalendarDate = global::OpenStroly.Android.Resource.Style.CalendarCell_CalendarDate;
+			global::Tilemapjp.XF.Android.Resource.Style.CalendarCell_DayHeader = global::OpenStroly.Android.Resource.Style.CalendarCell_DayHeader;
+			global::Tilemapjp.XF.Android.Resource.Style.CalendarTitle = global::OpenStroly.Android.Resource.Style.CalendarTitle;
 		}
 		
 		public partial class Attribute
@@ -44,11 +125,94 @@ namespace OpenStroly.Android
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int calendar_active_month_bg = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int calendar_bg = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int calendar_divider = 2131034114;
+			
+			// aapt resource value: 0x7f050005
+			public const int calendar_highlighted_day_bg = 2131034117;
+			
+			// aapt resource value: 0x7f050003
+			public const int calendar_inactive_month_bg = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int calendar_selected_day_bg = 2131034116;
+			
+			// aapt resource value: 0x7f050006
+			public const int calendar_selected_range_bg = 2131034118;
+			
+			// aapt resource value: 0x7f050008
+			public const int calendar_text_active = 2131034120;
+			
+			// aapt resource value: 0x7f050007
+			public const int calendar_text_inactive = 2131034119;
+			
+			// aapt resource value: 0x7f050009
+			public const int calendar_text_selected = 2131034121;
+			
+			// aapt resource value: 0x7f05000b
+			public const int calendar_text_selector = 2131034123;
+			
+			// aapt resource value: 0x7f05000a
+			public const int calendar_text_unselectable = 2131034122;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int calendar_day_headers_paddingbottom = 2131099648;
+			
+			// aapt resource value: 0x7f060002
+			public const int calendar_month_title_bottommargin = 2131099650;
+			
+			// aapt resource value: 0x7f060001
+			public const int calendar_month_topmargin = 2131099649;
+			
+			// aapt resource value: 0x7f060003
+			public const int calendar_text_medium = 2131099651;
+			
+			// aapt resource value: 0x7f060004
+			public const int calendar_text_small = 2131099652;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ad16 = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int calendar_bg_selector = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
 			
 			static Drawable()
 			{
@@ -63,8 +227,23 @@ namespace OpenStroly.Android
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int myButton = 2131099648;
+			// aapt resource value: 0x7f080005
+			public const int calendar_grid = 2131230725;
+			
+			// aapt resource value: 0x7f080001
+			public const int calendar_view = 2131230721;
+			
+			// aapt resource value: 0x7f080003
+			public const int left_arrow = 2131230723;
+			
+			// aapt resource value: 0x7f080004
+			public const int myButton = 2131230724;
+			
+			// aapt resource value: 0x7f080002
+			public const int right_arrow = 2131230722;
+			
+			// aapt resource value: 0x7f080000
+			public const int title = 2131230720;
 			
 			static Id()
 			{
@@ -80,7 +259,22 @@ namespace OpenStroly.Android
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int calendar_pager_layout = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int calendar_picker = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int dialog = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int Main = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int month = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int week = 2130903045;
 			
 			static Layout()
 			{
@@ -95,14 +289,32 @@ namespace OpenStroly.Android
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040002
-			public const int app_name = 2130968578;
+			// aapt resource value: 0x7f040006
+			public const int ApplicationName = 2130968582;
+			
+			// aapt resource value: 0x7f040005
+			public const int Hello = 2130968581;
+			
+			// aapt resource value: 0x7f040008
+			public const int app_name = 2130968584;
 			
 			// aapt resource value: 0x7f040001
-			public const int hello = 2130968577;
+			public const int day_name_format = 2130968577;
+			
+			// aapt resource value: 0x7f040004
+			public const int full_date_format = 2130968580;
+			
+			// aapt resource value: 0x7f040007
+			public const int hello = 2130968583;
+			
+			// aapt resource value: 0x7f040002
+			public const int invalid_date = 2130968578;
 			
 			// aapt resource value: 0x7f040000
 			public const int library_name = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int month_name_format = 2130968579;
 			
 			static String()
 			{
@@ -117,8 +329,20 @@ namespace OpenStroly.Android
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int NoActionBarTheme = 2131034112;
+			// aapt resource value: 0x7f070001
+			public const int CalendarCell = 2131165185;
+			
+			// aapt resource value: 0x7f070003
+			public const int CalendarCell_CalendarDate = 2131165187;
+			
+			// aapt resource value: 0x7f070002
+			public const int CalendarCell_DayHeader = 2131165186;
+			
+			// aapt resource value: 0x7f070000
+			public const int CalendarTitle = 2131165184;
+			
+			// aapt resource value: 0x7f070004
+			public const int NoActionBarTheme = 2131165188;
 			
 			static Style()
 			{

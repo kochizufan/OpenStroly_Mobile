@@ -15,7 +15,7 @@ namespace Tilemapjp.XF.Android
 {
 	public class WebViewExRenderer : HybridWebViewRenderer
 	{
-		protected override void OnElementChanged (ElementChangedEventArgs<HybridWebViewRenderer> e)
+		protected override void OnElementChanged (ElementChangedEventArgs<HybridWebView> e)
 		{
 			base.OnElementChanged (e);
 

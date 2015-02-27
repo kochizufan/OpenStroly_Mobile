@@ -13,12 +13,15 @@ namespace Tilemapjp.XF.iOS
 {
 	public class WebViewExRenderer : HybridWebViewRenderer
 	{
+		private UIWebLoaderControl _ShouldStartLoad;
+
 		protected override void OnElementChanged (ElementChangedEventArgs<HybridWebView> e)
 		{
 			base.OnElementChanged(e);
 			if (e.OldElement == null)
 			{
-				this.ShouldStartLoad = HandleShouldStartLoad;
+				_ShouldStartLoad = ((UIWebView)this.NativeView).ShouldStartLoad;
+				//this.ShouldStartLoad = HandleShouldStartLoad;
 
 				var web = (UIWebView)this.NativeView;
 				foreach (var subView in web.Subviews) {
@@ -36,7 +39,7 @@ namespace Tilemapjp.XF.iOS
 			var url = request.Url.ToString ();
 			webViewEx.RaiseHandleStarted(new HandleStartedMessage(){ Uri = new Uri(url)});
 
-			return webViewEx.ShouldLoad == null ? true : webViewEx.ShouldLoad(webViewEx, url);
+			return webViewEx.ShouldLoad == null ? _ShouldStartLoad(webView, request, navigationType) : webViewEx.ShouldLoad(webViewEx, url);
 		}
 
 		public static void CacheInitialize ()
