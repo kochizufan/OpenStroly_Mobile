@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using System.Reactive.Subjects;
 using System.IO;
+using XLabs.Forms.Controls;
 
 namespace Tilemapjp.XF
 {
@@ -20,7 +21,7 @@ namespace Tilemapjp.XF
 		public Uri Uri { get; set; }
 	}
 
-	public class WebViewEx : WebView
+	public class WebViewEx : HybridWebView
 	{
 		public static WebViewExUseCachedContent _UseCachedContent { get; set; }
 

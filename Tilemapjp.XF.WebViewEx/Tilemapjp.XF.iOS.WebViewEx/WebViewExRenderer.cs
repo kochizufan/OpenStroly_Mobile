@@ -5,14 +5,15 @@ using Xamarin.Forms.Platform.iOS;
 using Xamarin.Forms;
 using UIKit;
 using Foundation;
+using XLabs.Forms.Controls;
 
 [assembly: ExportRenderer (typeof (WebViewEx), typeof (WebViewExRenderer))]
 
 namespace Tilemapjp.XF.iOS
 {
-	public class WebViewExRenderer : WebViewRenderer
+	public class WebViewExRenderer : HybridWebViewRenderer
 	{
-		protected override void OnElementChanged(VisualElementChangedEventArgs e)
+		protected override void OnElementChanged (ElementChangedEventArgs<HybridWebView> e)
 		{
 			base.OnElementChanged(e);
 			if (e.OldElement == null)

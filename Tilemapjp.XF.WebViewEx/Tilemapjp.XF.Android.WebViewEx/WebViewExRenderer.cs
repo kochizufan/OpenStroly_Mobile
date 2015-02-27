@@ -7,14 +7,15 @@ using Android.Webkit;
 using AndWebView = Android.Webkit.WebView;
 using System.IO;
 using System.Text;
+using XLabs.Forms.Controls;
 
 [assembly: ExportRenderer (typeof (WebViewEx), typeof (WebViewExRenderer))]
 
 namespace Tilemapjp.XF.Android
 {
-	public class WebViewExRenderer : WebViewRenderer
+	public class WebViewExRenderer : HybridWebViewRenderer
 	{
-		protected override void OnElementChanged (ElementChangedEventArgs<Xamarin.Forms.WebView> e)
+		protected override void OnElementChanged (ElementChangedEventArgs<HybridWebViewRenderer> e)
 		{
 			base.OnElementChanged (e);
 
