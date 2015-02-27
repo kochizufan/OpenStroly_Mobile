@@ -1,9 +1,12 @@
 ﻿<Properties StartupItem="OpenStroly/OpenStroly.iOS/OpenStroly.iOS.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhone4s.8.1" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OpenStroly/OpenStroly/App.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="OpenStroly/OpenStroly.Android/packages.config" Line="1" Column="1" />
       <File FileName="OpenStroly/OpenStroly/App.cs" Line="1" Column="1" />
+      <File FileName="Tilemapjp.XF.WebViewEx/WebViewEx.cs" Line="40" Column="40" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.Android.WebViewEx/WebViewExRenderer.cs" Line="90" Column="90" />
+      <File FileName="Tilemapjp.XF.WebViewEx/Tilemapjp.XF.iOS.WebViewEx/WebViewExRenderer.cs" Line="21" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
