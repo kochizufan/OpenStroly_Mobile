@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using UIKit;
 using Foundation;
 using XLabs.Forms.Controls;
+using System.Reflection;
 
 [assembly: ExportRenderer (typeof (WebViewEx), typeof (WebViewExRenderer))]
 
@@ -13,17 +14,16 @@ namespace Tilemapjp.XF.iOS
 {
 	public class WebViewExRenderer : HybridWebViewRenderer
 	{
-		private UIWebLoaderControl _ShouldStartLoad;
-
 		protected override void OnElementChanged (ElementChangedEventArgs<HybridWebView> e)
 		{
 			base.OnElementChanged(e);
 			if (e.OldElement == null)
 			{
-				_ShouldStartLoad = ((UIWebView)this.NativeView).ShouldStartLoad;
-				//this.ShouldStartLoad = HandleShouldStartLoad;
+				var web = this.Control;
 
-				var web = (UIWebView)this.NativeView;
+				//_ShouldStartLoad = (UIWebLoaderControl)((UIWebView)_view).ShouldStartLoad;
+				//this.ShouldStartLoad = HandleShouldStartLoad;
+				web.ShouldStartLoad = HandleShouldStartLoad;
 				foreach (var subView in web.Subviews) {
 					if (subView.IsKindOfClass(new ObjCRuntime.Class(typeof(UIScrollView)))) {
 						((UIScrollView)subView).ScrollEnabled = false;
@@ -39,7 +39,11 @@ namespace Tilemapjp.XF.iOS
 			var url = request.Url.ToString ();
 			webViewEx.RaiseHandleStarted(new HandleStartedMessage(){ Uri = new Uri(url)});
 
-			return webViewEx.ShouldLoad == null ? _ShouldStartLoad(webView, request, navigationType) : webViewEx.ShouldLoad(webViewEx, url);
+			return webViewEx.ShouldLoad == null ? 
+				//this.HandleStartLoad(webView, request, navigationType) : 
+				(bool)this.GetType().InvokeMember("HandleStartLoad",
+					BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.GetField, null, this, new object[] { webView, request, navigationType }) :
+				webViewEx.ShouldLoad(webViewEx, url);
 		}
 
 		public static void CacheInitialize ()

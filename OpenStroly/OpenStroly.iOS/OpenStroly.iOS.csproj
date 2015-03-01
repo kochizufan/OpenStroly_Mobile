@@ -46,7 +46,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Debug</OutputPath>
-    <DefineConstants>DEBUG;</DefineConstants>
+    <DefineConstants>DEBUG; BUSINESS_LICENSE;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
@@ -194,6 +194,9 @@
     </Reference>
     <Reference Include="XLabs.Forms">
       <HintPath>..\..\packages\XLabs.Forms.2.0.5530\lib\Xamarin.iOS10\XLabs.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="XLabs.Serialization.ServiceStack.iOS">
+      <HintPath>..\..\packages\XLabs.Serialization.ServiceStackV3.2.0.5530\lib\Xamarin.iOS10\XLabs.Serialization.ServiceStack.iOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
