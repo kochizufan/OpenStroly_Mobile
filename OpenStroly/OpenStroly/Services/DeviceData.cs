@@ -13,7 +13,7 @@ namespace OpenStroly
 		public bool IsPhone;
 		public bool IsPortrait;
 		public string SplashImage;
-		public float Scale = 1.0f;
+		public float Scale;
 	}
 
 	public class DeviceData
@@ -123,6 +123,7 @@ namespace OpenStroly
 			var ret = retVal.Value;
 			ret.DpWidth  = ret.PxWidth  / device.ScreenDensity();
 			ret.DpHeight = ret.PxHeight / device.ScreenDensity();
+			ret.Scale = (float)Math.Floor((wRatio > hRatio ? 1.0f / wRatio : 1.0f / hRatio) * 10f) / 10f;
 			return ret;
 		}
 	}

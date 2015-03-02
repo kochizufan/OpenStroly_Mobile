@@ -11,6 +11,8 @@ namespace OpenStroly
 {
 	public partial class SplashPage : ContentPage
 	{
+		float Scaling = 1.0f;
+
 		public SplashPage ()
 		{
 			InitializeComponent ();
@@ -21,8 +23,9 @@ namespace OpenStroly
 			web.ShouldLoad = ShouldLoad;
 			web.UseCachedContent = UseCachedContent;
 			var splashSize = DeviceData.GetCompatibleSplashInfo ();
-			web.WidthRequest  = (double)splashSize.DpWidth;
-			web.HeightRequest = (double)splashSize.DpHeight;
+			web.WidthRequest  = (double)(splashSize.DpWidth  * splashSize.Scale);
+			web.HeightRequest = (double)(splashSize.DpHeight * splashSize.Scale);
+			Scaling = splashSize.Scale;
 
 			var urlSource = new UrlWebViewSource ();
 			urlSource.Url = "http://tilemap.jp/KochizuBurari/menu.html";
@@ -70,12 +73,14 @@ namespace OpenStroly
 				var content = manifestResourceStream.ToByteArray ();
 
 				var contentString = Encoding.UTF8.GetString(content,0,content.Length);
+				contentString = contentString.Replace (" initial-scale=1.0", String.Format (" initial-scale={0}", Scaling));
 				if (contentString.Contains ("#{")) {
 					var trans = DependencyService.Get<ILuaEngine> ();
 					contentString = trans.AttachTemplate (contentString);
 					content = Encoding.UTF8.GetBytes (contentString);
 				}
-					
+
+
 				return new WebViewExCachedContent {
 					Mime = "text/html",
 					Encoding = "UTF-8",
