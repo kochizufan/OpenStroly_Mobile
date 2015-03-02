@@ -130,6 +130,9 @@
     <Reference Include="XLabs.Forms">
       <HintPath>..\..\packages\XLabs.Forms.2.0.5530\lib\MonoAndroid\XLabs.Forms.dll</HintPath>
     </Reference>
+    <Reference Include="XLabs.Serialization.ServiceStack.Droid">
+      <HintPath>..\..\packages\XLabs.Serialization.ServiceStackV3.2.0.5530\lib\MonoAndroid\XLabs.Serialization.ServiceStack.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Tilemapjp.XF.WebViewEx\Tilemapjp.XF.WebViewEx.csproj">

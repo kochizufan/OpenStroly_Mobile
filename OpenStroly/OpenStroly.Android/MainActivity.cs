@@ -11,6 +11,8 @@ using Android.OS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using AndView = Android.Views.View;
+using XLabs.Ioc;
+using XLabs.Serialization;
 
 namespace OpenStroly.Android
 {
@@ -24,6 +26,25 @@ namespace OpenStroly.Android
 			base.SetTheme(global::Android.Resource.Style.ThemeHoloLight);
 			base.OnCreate(bundle);
 			base.ActionBar.Hide();
+
+			var resolverContainer = new SimpleContainer();
+
+			//var hybridWebView = new MyHybridWebView (new JsonSerializer());
+			//var dataSourceFactory = new DataSourceFactory ();
+
+			//var documents = app.AppDataDirectory;
+
+			resolverContainer//.Register<IDevice> (t => AppleDevice.CurrentDevice)
+			//.Register<IDisplay> (t => t.Resolve<IDevice> ().Display)
+			//.Register<IXFormsApp> (app)
+			//.Register<IDependencyContainer> (t => resolverContainer)
+			//.Register<MyHybridWebView> (hybridWebView)
+			//.Register<IDataSourceFactory> (dataSourceFactory)
+				.Register<IJsonSerializer, XLabs.Serialization.ServiceStack.JsonSerializer> ();
+
+
+			Resolver.SetResolver(resolverContainer.GetResolver());
+
 
 			Forms.Init(this, bundle);
 			var app = new App ();

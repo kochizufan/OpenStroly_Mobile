@@ -13,6 +13,7 @@ namespace OpenStroly
 		public bool IsPhone;
 		public bool IsPortrait;
 		public string SplashImage;
+		public float Scale = 1.0f;
 	}
 
 	public class DeviceData
@@ -113,7 +114,7 @@ namespace OpenStroly
 				var hR = splash.PxHeight / original.Height;
 				if (wR > 1.0f || hR > 1.0f)
 					continue;
-				if (wR > wRatio && hR > hRatio) {
+				if (wR >= wRatio && hR >= hRatio) {
 					wRatio = wR;
 					hRatio = hR;
 					retVal = splash;

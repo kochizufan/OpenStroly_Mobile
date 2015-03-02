@@ -39,8 +39,6 @@ namespace OpenStroly.iOS
 
 			Resolver.SetResolver(resolverContainer.GetResolver());
 
-
-
 			Forms.Init();
 			LoadApplication(new App());
 			return base.FinishedLaunching(app, options);
