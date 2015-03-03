@@ -1,16 +1,16 @@
 ﻿<Properties StartupItem="OpenStroly/OpenStroly.Android/OpenStroly.Android.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.1ab27261" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhone" PreferredExecutionTarget="Android.Android4.0" />
   <MonoDevelop.Ide.Workbench ActiveDocument="OpenStroly/OpenStroly/Services/DeviceData.cs">
     <Files>
-      <File FileName="OpenStroly/OpenStroly.iOS/AppDelegate.cs" Line="19" Column="19" />
-      <File FileName="OpenStroly/OpenStroly.Android/MainActivity.cs" Line="25" Column="25" />
-      <File FileName="OpenStroly/OpenStroly/Services/DeviceData.cs" Line="23" Column="23" />
-      <File FileName="OpenStroly/OpenStroly.iOS/Services/DeviceProperty.cs" Line="1" Column="1" />
-      <File FileName="OpenStroly/OpenStroly/Pages/SplashPage.xaml" Line="1" Column="1" />
+      <File FileName="OpenStroly/OpenStroly/Services/IInternalResource.cs" Line="10" Column="10" />
+      <File FileName="OpenStroly/OpenStroly.Android/Services/InternalResource.cs" Line="1" Column="1" />
+      <File FileName="OpenStroly/OpenStroly.iOS/Services/InternalResource.cs" Line="1" Column="1" />
       <File FileName="OpenStroly/OpenStroly/Pages/SplashPage.xaml.cs" Line="1" Column="1" />
       <File FileName="OpenStroly/OpenStroly/content/tilemap.jp/KochizuBurari/menu.html" Line="1" Column="1" />
-      <File FileName="OpenStroly/OpenStroly/Services/ILuaEngine.cs" Line="1" Column="1" />
-      <File FileName="OpenStroly/OpenStroly/Services/LuaEngine.cs" Line="1" Column="1" />
+      <File FileName="OpenStroly/OpenStroly/Services/DeviceData.cs" Line="27" Column="27" />
+      <File FileName="OpenStroly/OpenStroly.Android/Services/DeviceProperty.cs" Line="1" Column="1" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/External/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1" Column="1" />
+      <File FileName="OpenStroly/OpenStroly.Android/Services/Localize.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

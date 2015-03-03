@@ -167,37 +167,22 @@
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="packages.config" />
-    <None Include="Resources\drawable\Default_568h_2x.png" />
-    <None Include="Resources\drawable\Default_Landscape.png" />
-    <None Include="Resources\drawable\Default_Portrait.png" />
-    <None Include="Resources\drawable\Default.png" />
-    <None Include="Resources\drawable\Default_2x.png" />
-    <None Include="Resources\drawable-ja\Default_568h_2x.png" />
-    <None Include="Resources\drawable-ja\Default_Landscape.png" />
-    <None Include="Resources\drawable-ja\Default_Portrait.png" />
-    <None Include="Resources\drawable-ja\Default.png" />
-    <None Include="Resources\drawable-ja\Default_2x.png" />
-    <None Include="..\OpenStroly.iOS\Resources\en.lproj\Default-568h%402x.png">
-      <Link>Resources\compatible\Default-568h%402x.png</Link>
-    </None>
-    <None Include="..\OpenStroly.iOS\Resources\en.lproj\Default-Landscape.png">
-      <Link>Resources\compatible\Default-Landscape.png</Link>
-    </None>
-    <None Include="..\OpenStroly.iOS\Resources\en.lproj\Default-Portrait.png">
-      <Link>Resources\compatible\Default-Portrait.png</Link>
-    </None>
-    <None Include="..\OpenStroly.iOS\Resources\en.lproj\Default.png">
-      <Link>Resources\compatible\Default.png</Link>
-    </None>
-    <None Include="..\OpenStroly.iOS\Resources\en.lproj\Default%402x.png">
-      <Link>Resources\compatible\Default%402x.png</Link>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\Default_568h_2x.png" />
+    <AndroidResource Include="Resources\drawable\Default_Landscape.png" />
+    <AndroidResource Include="Resources\drawable\Default_Portrait.png" />
+    <AndroidResource Include="Resources\drawable\Default_2x.png" />
+    <AndroidResource Include="Resources\drawable-ja\Default_568h_2x.png" />
+    <AndroidResource Include="Resources\drawable-ja\Default_Landscape.png" />
+    <AndroidResource Include="Resources\drawable-ja\Default_Portrait.png" />
+    <AndroidResource Include="Resources\drawable-ja\Default_2x.png" />
+    <AndroidResource Include="Resources\drawable\Default_.png" />
+    <AndroidResource Include="Resources\drawable-ja\Default_.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.1.3.4.6332\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.1.3.4.6332\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -205,6 +190,5 @@
     <Folder Include="Resources\drawable-ja\" />
     <Folder Include="Services\" />
     <Folder Include="Pages\" />
-    <Folder Include="Resources\compatible\" />
   </ItemGroup>
 </Project>

@@ -212,7 +212,22 @@ namespace OpenStroly.Android
 			public const int calendar_bg_selector = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Icon = 2130837506;
+			public const int Default_ = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int Default_2x = 2130837507;
+			
+			// aapt resource value: 0x7f020004
+			public const int Default_568h_2x = 2130837508;
+			
+			// aapt resource value: 0x7f020005
+			public const int Default_Landscape = 2130837509;
+			
+			// aapt resource value: 0x7f020006
+			public const int Default_Portrait = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Icon = 2130837511;
 			
 			static Drawable()
 			{

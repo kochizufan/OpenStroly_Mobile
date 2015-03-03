@@ -18,6 +18,8 @@ namespace OpenStroly
 
 	public class DeviceData
 	{
+		static SplashInfo? splashInfo = null;
+
 		public static List<SplashInfo> SplashInfos = new List<SplashInfo> {
 			new SplashInfo() {
 				DeviceName = "iPhone3",
@@ -99,6 +101,10 @@ namespace OpenStroly
 
 		public static SplashInfo GetCompatibleSplashInfo ()
 		{
+			if (splashInfo.HasValue) {
+				return splashInfo.Value;
+			}
+
 			var device = DependencyService.Get<IDeviceProperty> ();
 			var original = device.DisplayPxSize ();
 			SplashInfo? retVal = null;
@@ -124,7 +130,8 @@ namespace OpenStroly
 			ret.DpWidth  = ret.PxWidth  / device.ScreenDensity();
 			ret.DpHeight = ret.PxHeight / device.ScreenDensity();
 			ret.Scale = (float)Math.Floor((wRatio > hRatio ? 1.0f / wRatio : 1.0f / hRatio) * 10f) / 10f;
-			return ret;
+			splashInfo = ret;
+			return splashInfo.Value;
 		}
 	}
 }

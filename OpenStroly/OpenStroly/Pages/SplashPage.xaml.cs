@@ -88,6 +88,14 @@ namespace OpenStroly
 				};
 			} else if (url.StartsWith("stroly.internalresource")) {
 				var inter = DependencyService.Get<IInternalResource> ();
+				url = url.Replace("stroly.internalresource://","");
+				var content = inter.GetResourceData (url);
+
+				return new WebViewExCachedContent {
+					Mime = "image/png",
+					Encoding = "UTF-8",
+					Content = content
+				};
 			}
 			return null;
 		}
